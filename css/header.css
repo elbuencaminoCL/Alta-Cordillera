@@ -8,10 +8,17 @@
 body {
     margin: 0;
     padding: 0;
-    background: #357; /* COMENTAR */ 
+    background: url("http://cdn.paper4pc.com/images/free-low-poly-wallpaper-1.jpg") top center no-repeat; /* COMENTAR */ 
+}
+.wrapper{
+	background: rgba(0,0,0,0.5);
 }
 #header{
 	font-family: "Lato";
+}
+#header.chevron .cajon{
+	position: relative;
+	z-index: 1;
 }
 #header.chevron #top-menu,
 #header.chevron #extra-logo a h4,
@@ -71,14 +78,20 @@ body {
 #header #extra-logo{
 	text-align: center;
 	max-width: 220px;
-	margin: -50px auto 0px auto;
+	margin: -90px auto 0px auto;
 	position: relative;
 	z-index: 5;
+}
+#header.chevron #extra-logo{
+	transition: all 0.2s;
+	margin: -40px auto 0px auto;
 }
 #header #extra-logo a{
 	display: block;
 	color: #FFF;
 	font-size: 18px;
+	position: relative;
+	z-index: 2;
 }
 #header #extra-logo a h4{
 	line-height: 30px;
@@ -90,84 +103,43 @@ body {
 	text-decoration: none;
 }
 #header #extra-logo a span{
-	border-top: 1px solid #FFF;
 	display: block;
-	padding: 10px 0px 0px 0px;
+	color: #257FA7;
+	font-size: 13px;
+	padding: 10px 0px;
 }
 #header #extra-logo .triangulo{
 	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 200px;
-	height: 60px;
-	position: relative;
-	margin: 0 0 6px;
-	padding: 12px;
-	border: none;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	text-align: center;
-	-o-text-overflow: clip;
-	text-overflow: clip;
-}
-#header #extra-logo .triangulo:before{
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 50%;
-	height: 100%;
-	position: absolute;
-	content: "";
-	top: 0;
-	left: 0;
-	border: none;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	-o-text-overflow: clip;
-	text-overflow: clip;
-	background: #2476D5;
-	text-shadow: none;
-	-webkit-transform: rotateX(-7.448451336700702deg) rotateY(1.7188733853924696deg)   skewY(15deg);
-	transform: rotateX(-7.448451336700702deg) rotateY(1.7188733853924696deg)   skewY(15deg);
-}
-#header #extra-logo .triangulo:after{
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 50%;
-	height: 100%;
-	position: absolute;
-	content: "";
-	top: 0;
-	right: 0;
-	border: none;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	-o-text-overflow: clip;
-	text-overflow: clip;
-	background: #2476D5;
-	text-shadow: none;
-	-webkit-transform:    skewY(-15deg);
-	transform:    skewY(-15deg);
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    background: #FFF;
+    position: absolute;
+    margin: 0px 0px;
+    padding: 12px;
+    border: none;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,.175);
+    color: rgba(0,0,0,1);
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    transform: rotate(45deg);
+    z-index: 1;
+    top: -120px;
 }
 #header.chevron{
 	transition: all 0.2s;
 }
 #header #extra-logo .triangulo{
-	display: none;
+	
 }
 #header.chevron #extra-logo{
-	transition: all 0.2s;
-	margin: -40px auto 0px auto;
+	
 }
 #header.chevron #extra-logo .triangulo{
-	padding: 0px;
-	display: block;
-    height: 43px;
-    width: 100%;
-    margin: -43px 0px 0px 0px;
-    z-index: 1;
-    position: relative;
+	box-shadow: none;
+	top: -180px;
 }
 #header.chevron #extra-logo a{
 	position: relative;
@@ -176,25 +148,32 @@ body {
 #header.chevron #extra-logo a img{
 	max-width: 40px;
 }
+#header.chevron #menu-principal{
+	background: #FFF;
+}
 #header.chevron #menu-principal ul li a{
 	padding: 10px;
+	color: #1D6585;
+}
+#header.chevron #menu-principal .dropdown-menu li a{
+	color: #FFF;
 }
 #header .dropdown-menu {
     padding: 0;
     box-shadow: none;
     border-radius: 0;
     border: none;
-    -webkit-box-shadow: 0 2px 4px 3px rgba(0,0,0,.175);
-    box-shadow: 0 2px 4px 3px rgba(0,0,0,.175);
+    background: rgba(37,127,167,0.5);
 }
 #header #menu-principal.navbar {
     min-height: 40px;
 }
 #header #menu-principal {
-	background: transparent;
+	background: url("../img/menu-bg.svg") top center no-repeat;
     border-radius: 0px;
     border: 0px;
     margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     box-shadow: none;
     z-index: 3000;
 }
@@ -210,24 +189,25 @@ body {
 	float: right;
 }
 #header #menu-principal ul li a {
+	text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    padding: 10px 20px;
+    line-height: 14px;
+    padding: 10px 10px;
     color: #FFF;
     border: none;
     border-bottom: 3px solid transparent;
     border-top: 3px solid transparent;
 }
 #header #menu-principal ul li a:hover{
-    color: #2476D5;
-    background: #FFF;
+    border-bottom: 3px solid #FFF;
     transition: all 0.5s;
 }
 #header #menu-principal ul li a:hover .caret{
 	border-color: #2476D5;
 }
 #header #menu-principal .caret{
+	display: none;
 	color: transparent;
 	border: 3px solid #FFF;
 	border-top: 0px;
@@ -240,11 +220,11 @@ body {
 }
 #header #menu-principal .dropdown-menu li a{
 	padding: 10px;
-	color: #385677;
+	color: #FFF;
 }
 #header #menu-principal .dropdown-menu li a:hover {
 	border-color: transparent;
-    background-color: #00ABC5;
+    background-color: #257FA7;
     color: #FFF;
 }
 #header #menu-principal .navbar-collapse{
@@ -257,8 +237,8 @@ body {
 #header #menu-principal .open > a, 
 #header #menu-principal .open > a:hover, 
 #header #menu-principal .open > a:focus{
-	background: #FFF;
-    color: #2476D5;
+	background: transparent;
+	border-bottom: 3px solid #FFF;
     transition: all 0.2s;
 }
 #header #menu-principal .open > a .caret{
@@ -273,11 +253,16 @@ body {
 
 @media only screen and (max-width : 992px) {
 
+	#header.chevron #top-menu,
+	#header.chevron #extra-logo a h4,
+	#header.chevron #extra-logo a span{
+		display: block;
+	}
 	#header #mobile-logo{
 		display: block;
 	}
 	#header #mobile-logo a h4{
-		color: #FFF;
+		color: #1D6585;
 	}
 	#header #extra-logo{
 		display: none;
@@ -289,6 +274,8 @@ body {
 	#header.chevron .cajon{
 		-webkit-clip-path: none;
 		clip-path: none;
+		position: relative;
+    	z-index: 1;
 	}
 	#header #top-menu .fb, #header #top-menu .tt {
 	   	border-radius: 0px;
@@ -302,6 +289,7 @@ body {
 		width: 70%;
 	}
 	#header .nav-toggler-movil{
+		background: #FFF;
 		float: none;
 		width: 100%;
 	}
@@ -323,7 +311,7 @@ body {
 		float: left;
 	}
 	#header{
-		background: #2476D5;
+		background: rgba(37,127,167,0.5);;
 	}
 	#header #top-menu{
 		margin: 20px 0px 0px 0px;
@@ -357,16 +345,35 @@ body {
 	#header #top-menu ul li a .caret{
 		display: none;
 	}
-
-	#header #menu-principal ul li a:hover{
-		background: #FFF;
-		border: 0px;	
-		color: #385677;
+	#header.chevron #menu-principal .dropdown-menu li a,
+	#header #menu-principal .dropdown-menu li a{
+		color: #257FA7;
+		padding: 10px 10px;
+	}
+	#header.chevron #menu-principal{
+		background: transparent;
+	}
+	#header.chevron #menu-principal ul li a{
+		background: transparent;
+		border: 0px;
+	    color: #FFF;
+		padding: 14px 0px;
+	}
+	#header #menu-principal .dropdown-menu li a:hover{
+		border-color: transparent;
+	    background: #257FA7;
+	    color: #FFF;
 	}
 	#header #top-menu ul li a:hover{
 		background: #FFF;
 		border: 0px;	
 		color: #385677;
+	}
+	#header.chevron #menu-principal ul li a:hover,
+	#header #menu-principal ul li a:hover{
+		border: 0px;
+	    background: #257FA7;
+	    color: #FFF;
 	}
 	#header #menu-principal ul li a .dropper{
 		display: none;
@@ -379,7 +386,7 @@ body {
 		border: 0px;
 	}
 	#header .navbar-default .navbar-toggle .icon-bar{
-		background: #FFF;
+		background: #1D6585;
 	}
 	#header #top-menu ul li .fb:hover{
 		background: #3b5998;
@@ -411,9 +418,8 @@ body {
 	#header .navbar-nav .open .dropdown-menu a:hover{
 		color: #FFF;
 	}
-	#header #menu-principal.navbar {
-	    background-color: #385677;
-	    min-height: 40px;
+	#header #menu-principal{
+	    background: transparent;
 	}
 
 }
@@ -422,8 +428,7 @@ body {
 @media only screen and (min-width : 992px) and (max-width : 1200px) {
 
 	#header #menu-principal ul li a {
-	    line-height: 30px;
-        font-size: 13px;
+        font-size: 12px;
     	padding: 4px 8px;
 	}
 	#header .cajon{
