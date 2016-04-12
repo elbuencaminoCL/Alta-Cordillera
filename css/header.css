@@ -261,6 +261,9 @@ body {
 	#header #mobile-logo{
 		display: block;
 	}
+	#header #mobile-logo a.clearfix{
+		display: block;
+	}
 	#header #mobile-logo a h4{
 		color: #1D6585;
 		margin: 18px 0px 0px 0px;
