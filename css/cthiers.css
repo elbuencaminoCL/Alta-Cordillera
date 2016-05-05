@@ -150,7 +150,7 @@ ul{
 .block-rojo{
   margin: 15px 0px 0px 0px;
   padding: 15px 15px 15px 15px;
-  background: #955;
+  background: #1D6585;
   color: #FFF;
 }
 .block-rojo p{
@@ -207,9 +207,9 @@ ul{
   color: #FB0;
 }
 .btn-tres{
-  color: #955;
+  color: # 1D6585;
   background: transparent;
-  border: 2px solid #955;
+  border: 2px solid #1D6585;
   border-radius: 100px;
   font-size: 14px;
   padding: 6px 20px;
@@ -218,7 +218,7 @@ ul{
 }
 .btn-tres:hover,
 .btn-tres[aria-expanded="true"]{
-  background: #955;
+  background: #1D6585;
   color: #FFF;
 }
 .btn-tres:hover .toggle,
@@ -227,18 +227,18 @@ ul{
 }
 .btn-cuatro{
   color: #FFF;
-  background: #955;
+  background: #1D6585;
   border: 0px;
   border-radius: 100px;
   font-size: 14px;
   padding: 5px 60px;
   margin: 0px 0px;
   text-align: center;
-  border: 2px solid #955;
+  border: 2px solid #1D6585;
 }
 .btn-cuatro:hover{
   background: #FFF;
-  color: #955;
+  color: # 1D6585;
 }
 .btn-cinco{
   padding: 0px 0px;
@@ -246,7 +246,7 @@ ul{
   text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
-  color: #955;
+  color: # 1D6585;
 }
 .btn-cinco:hover{
   color: #666;
@@ -260,12 +260,12 @@ ul{
 }
 .btn-seis:hover{
   background: #FFF;
-  color: #955;
+  color: # 1D6585;
 }
 .btn-siete{
   color: #FFF;
-  background: #955;
-  border: 2px solid #955;
+  background: #1D6585;
+  border: 2px solid #1D6585;
   border-radius: 100px;
   font-size: 14px;
   padding: 6px 20px;
@@ -299,19 +299,19 @@ ul{
 }
 .btn-nueve{
   background: linear-gradient(135deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(153, 85, 85, 1) 50%,rgba(153, 85, 85, 1) 100%); 
-  border: 1px solid #955;
+  border: 1px solid #1D6585;
   border-radius: 100px;
   display: block;
   padding: 4px 10px;
 }
 .btn-nueve:hover{
-  background: #955;
+  background: #1D6585;
 }
 .btn-nueve:hover span:nth-of-type(1){
   color: #FFF;
 }
 .btn-nueve span:nth-of-type(1){
-  color: #955;
+  color: # 1D6585;
   float: left;
   width: 48%;
   text-align: center;
@@ -422,14 +422,14 @@ ul{
   border-radius: 100px;
   text-align: center;
   padding: 10px;
-  color: #955;
+  color: # 1D6585;
   background: #FFF;
   display: block;
   width: 100%;
   margin: 0px 0px 15px 0px;
 }
 .btn-catorce:last-of-type:hover{
-  color: #955;
+  color: # 1D6585;
   background: #FFF;
   width: 100%;
 }
@@ -449,7 +449,7 @@ ul{
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #955;
+  border-top: 10px solid # 1D6585;
   float: right;
   margin: 5px 0px 0px 10px;
   transition: all 0.3s ease-out;
@@ -489,7 +489,7 @@ a[aria-expanded="true"] .toggle{
 /* FONDOS */
 
 .bg-uno{
-  background: #955;
+  background: #1D6585;
 }
 .bg-dos{
   background: #BBB;
@@ -507,9 +507,9 @@ a[aria-expanded="true"] .toggle{
 /* TITULOS */
 
 h1{
-  color: #955;
+  color: # 1D6585;
   padding: 0px 0px 15px 0px;
-  border-bottom: 8px solid #955;
+  border-bottom: 8px solid # 1D6585;
   margin: 0px auto;
   font-size: 32px;
   font-family: "Exo";
@@ -523,7 +523,7 @@ h1 span{
   font-family: "Exo";
 }
 h2{
-  color: #955;
+  color: # 1D6585;
   font-weight: 600;
   font-size: 20px;
   margin: 0px 0px 30px 0px;
@@ -552,7 +552,7 @@ h6{}
 }
 .titulo-dos{}
 .titulo-tres{
-  background: #955;
+  background: #1D6585;
   padding: 10px;
   margin: 0px 0px 30px 0px;
 }
@@ -601,7 +601,7 @@ h6{}
   left: 50%;
   transform: translateX(-50%);
   border-radius: 200px;
-  background: #955;
+  background: #1D6585;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -671,7 +671,7 @@ h6{}
 
 .recuadro {
   color: #FFF;
-  background: #955;
+  background: #1D6585;
   border-radius: 100px;
   padding: 20px 40px;
   margin: 0px 0px 30px 0px;
@@ -751,7 +751,7 @@ form .btn-dos{
 }
 form label{
   text-transform: uppercase;
-  color: #955;
+  color: # 1D6585;
   margin: 0px 0px 10px 0px;
 }
 form input.form-control{
@@ -793,7 +793,7 @@ form select.form-control{
 }
 .selector-categoria label{
   margin: 0px 20px 0px 0px;
-  color: #955;
+  color: # 1D6585;
 }
 .selector-categoria .form-control{
   max-width: 220px;
@@ -825,7 +825,7 @@ form select.form-control{
 }
 .col-news h4{
   padding-top: 15px;
-  border-top: 3px solid #955;
+  border-top: 3px solid #1D6585;
 }
 .col-news p{
   text-align: justify;
@@ -850,7 +850,7 @@ form select.form-control{
 /* COMPARTIR */
 
 .compartir{
-  color: #955;
+  color: # 1D6585;
   text-align: right;
   line-height: 24px;
   display: flex;
@@ -862,7 +862,7 @@ form select.form-control{
 }
 .compartir a{
   display: inline-block;
-  border: 1px solid #955;
+  border: 1px solid #1D6585;
   border-radius: 100px;
   width: 24px;
   height: 24px;
@@ -907,7 +907,7 @@ form select.form-control{
   padding: 0px 15px;
 }
 .nav-trio .active{
-  background: #955;
+  background: #1D6585;
 }
 .nav-trio .active:after, 
 .nav-trio .active:before {
@@ -1145,7 +1145,7 @@ footer .centrar + .centrar a img{
   margin: 0px;
   width: 100%;
   padding: 14px 0px 0px 0px;
-  background: #955;
+  background: #1D6585;
   border: 0px;
   border-radius: 10px;
 }
@@ -1231,7 +1231,7 @@ footer .centrar + .centrar a img{
 #infra-desc h3 {
   text-align: left;
   width: 100%;
-  background: #955;
+  background: #1D6585;
   padding: 24px;
   border: 0px;
   color: #FFF;
@@ -1367,7 +1367,7 @@ footer .centrar + .centrar a img{
 .event-block{
   padding: 15px;
   border-top: 2px solid #A66;
-  background: #955;
+  background: #1D6585;
 }
 .event-block h2{
   color: #FFF;
@@ -1400,7 +1400,7 @@ footer .centrar + .centrar a img{
   padding: 30px;
   margin: 0px 0px;
   text-align: center;
-  background: #955;
+  background: #1D6585;
 }
 .agenda-bt .block-rojo{
   padding: 0px 0px;
@@ -1670,7 +1670,7 @@ a.btn[aria-expanded="true"]{
   color: #FFF;
   margin: 0px 0px;
   background: #A66;
-  border-bottom: 2px solid #955;
+  border-bottom: 2px solid # 1D6585;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;  
   border-bottom-left-radius: 0px;
@@ -1692,7 +1692,7 @@ a.btn[aria-expanded="true"] img{
 #syscol form input{
   border-radius: 100px;
   padding: 10px;
-  background: #955;
+  background: #1D6585;
   border: 0px;
   width: 100%;
   margin: 0px 0px 15px 0px;
@@ -1700,7 +1700,7 @@ a.btn[aria-expanded="true"] img{
 #syscol form button{
   padding: 10px;
   text-align: center;
-  color: #955;
+  color: # 1D6585;
   border-radius: 100px;
   background: #FFF;
   margin: 0px 0px 15px 0px;
@@ -1743,7 +1743,7 @@ a.btn[aria-expanded="true"] img{
 
 #academias{
   padding: 0px 60px;
-  background: #955;
+  background: #1D6585;
 }
 #academias h1{
   font-size: 24px;
@@ -1887,7 +1887,7 @@ a.btn[aria-expanded="true"] img{
     margin: 0px 0px 30px 0px;
   }
   .db-bg{
-    background: #955;
+    background: #1D6585;
   }
   .db-bg > .container{
     padding: 0px 0px;
@@ -1981,7 +1981,7 @@ a.btn[aria-expanded="true"] img{
   border-left: 10px solid #FFF;
 }
 #mes-actual h2 + div{
-  background: #955;
+  background: #1D6585;
   padding: 0px 0px 30px 0px;
 }
 #mes-actual h3{
@@ -2009,7 +2009,7 @@ a.btn[aria-expanded="true"] img{
   color: #666;
 }
 #tabla-mes tr:first-of-type td{
-  color: #955;
+  color: # 1D6585;
   font-weight: 600;
 }
 #mes-actual + h4{
@@ -2017,7 +2017,7 @@ a.btn[aria-expanded="true"] img{
   padding: 30px;
   margin: 0px 0px;
   text-align: center;
-  background: #955;
+  background: #1D6585;
 }
 #mes-actual:after, 
 #mes-actual:before {
