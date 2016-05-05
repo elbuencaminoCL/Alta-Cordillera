@@ -4,11 +4,14 @@
 	<title>Colegio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href='https://fonts.googleapis.com/css?family=Exo:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 	
 	<link href="css/cthiers.css" rel="stylesheet" media="screen">
+
+	<link href="css/header.css" rel="stylesheet" media="screen">
+
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
@@ -20,593 +23,537 @@
 	<![endif]-->
 </head>
 
-<body class="home" id="infra">
+<body class="home" id="home">
+
 	<div class="wrapper">
-		<!--header-->
+
+		<!-- HEADER -->
+
 		<header id="header" class="header clearfix">
+
+			<!-- MENU SUPERIOR -->
 
 			<nav id="top-menu" class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="row">
-				<!-- Brand and toggle get grouped for better mobile display 
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>-->
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse colapsables">
+
+							<a class="telefono" href="#">Telefono +5612345678</a>
+
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Video Institucional</a></li>
-								<li><a href="galerias.html">Galería</a></li>
-								<li><a href="#">Servicio Casino</a></li>
-								<li><a href="#"><img src="img/iconos/ico-facebook.png"></a></li>
-								<li><a href="#"><img src="img/iconos/ico-twitter.png"></a></li>
-								<li><a href="#">ES</a></li>
+								<li><a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a></li>
+								<li><a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a></li>
+								<li><a href="#">ES <span class="caret"></span></a></li>
 							</ul>
-						</div><!-- /.navbar-collapse -->
+						</div>
+
 					</div>
 				</div>
 			</nav>
 
+			<!-- MENU PRINCIPAL -->
+
 			<nav id="menu-principal" class="navbar navbar-default" role="navigation">
 				<div class="container">
-					<div class="row">
-			  <!-- Brand and toggle get grouped for better mobile display -->
-						<div id="hexagon" class="navbar-header">
+					<!--<div class="row clearfix">-->
+
+						<div class="nav-toggler-movil">
+
+							<div id="logotipo" class="navbar-header">
+								<a class="clearfix" href="index.html">
+									<img src="img/logo.png">									
+								</a>
+							</div>
+
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsables">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-							
-						</div>
+							</button>	
 
-			  <!-- Collect the nav links, forms, and other content for toggling -->
+						</div>					
+
 						<div class="collapse navbar-collapse colapsables">
 							
-						    <ul class="nav navbar-nav navbar-right">
-								<li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro colegio <span class="caret"></span></a>
+						    <ul class="nav navbar-nav"><!-- ELEMENTOS MENU -->
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro Colegio</a>
 						            <ul class="dropdown-menu">
-						                <li><a href="#">Proyecto Educativo</a></li>
-						                <li><a href="departamento.html">Bilingüismo</a></li>
-						                <li><a href="#">Infraestructura</a></li>
-						                <li><a href="#">Equipo Directivo</a></li>
-						                <li><a href="#">Equipo Docente</a></li>
-						             	<li><a href="noticias.html">Noticias</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
 						        </li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ciclos <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión 2016</a>
 						            <ul class="dropdown-menu">
-						            	<li><a href="ciclos.html">Ir a Ciclos</a></li>
-						                <li><a href="#">Infant School</a></li>
-						                <li><a href="#">Elementary</a></li>
-						                <li><a href="#">High School</a></li>
-						                <li><a href="guias.html">Guías de Estudio</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
 						        </li>
-
-						        <li><a href="talleres.html">Extra Programaticas</a></li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alumnos</a>
 						            <ul class="dropdown-menu">
-						                <li><a href="#">Uniforme</a></li>
-						                <li><a href="#">Lista de Útiles</a></li>
-						                <li><a href="#">Horario de Clases</a></li>
-						                <li><a href="#">Notas Net</a></li>
-						                <li><a href="#">Menú del Casino</a></li>
-						                <li><a href="#">Administración y Finanzas</a></li>	                
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
-						        </li>
-	
-					            <li><a href="#">Calendario</a></li>
-					            
-								<li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión <span class="caret"></span></a>
+						        </li>	
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados</a>
 						            <ul class="dropdown-menu">
-						            	<li><a href="admision.html">Ir a Admisión</a></li>
-						                <li><a href="#">Requisitos</a></li>
-						                <li><a href="#">Calendario de Postulación</a></li>
-						                <li><a href="#">Formulario de Postulación</a></li>
-						                <li><a href="#">Aranceles</a></li>               
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
 						        </li>
 
-					            <li><a href="#">Contacto</a></li>
-						    </ul>
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academias</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>						        						        					        
 
-						</div><!-- /.navbar-collapse -->
-					</div>
-				</div>
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agenda</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Webmail</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>						        
+
+						    </ul><!-- FIN ELEMENTOS MENU -->
+
+						</div>
+				<!--</div> ROW -->
+				</div><!-- CONTAINER -->
 			</nav>
-			<!-- /Navs General -->
+
+			<!-- FIN MENU PRINCIPAL -->
 
 		</header>
-		<!--/header-->
 
-		<!--main-->
+		<!-- FIN HEADER -->
+
+		<!-- CONTENIDO -->
+
 		<div id="main" class="clearfix">
-			<div id="foto-encabezado" class="absolute">
-				<img class="img-responsive" src="img/slider.jpg">
+
+			<div class="img-seccion">
+				<div class="img-shadow"></div>
+				<img class="img-absolute" src="img/sample-pics/018.jpg">
 			</div>
 
-			<h2 class="titulo-seccion center relative"><span>INFRAESTRUCTURA</span></h2>
-
-			<div class="container relative">
-
-				<div class="row">
-
-					<div class="center intro">
-						Con 10.000 M2 de áreas verdes, nuestro establecimiento cuenta con espacios equipados para nuestros alumnos. 
-					</div>
-
-					<div class="clearfix listado-infra">
-						<div class="col-sm-6 col-xs-12">
-							<ul>
-								<li>2 Multicanchas y 1 Gimnasio</li>
-								<li>Laboratorio de Ciencias</li>
-								<li>Casino</li>
-								<li>Ámplios espacios de áreas verdes</li>
-							</ul>
-						</div>
-						<div class="col-sm-6 col-xs-12">
-							<ul>
-								<li>Granja</li>
-								<li>Piscina</li>
-								<li>Biblioteca</li>
-							</ul>
-						</div>
-					</div>
-
-					<div id="lugares" class="dropdown">
-						<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Selecciona un punto en el mapa para ver más información
-						</button>
-
-						<ul id="lista-cuadros" class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li><a id="botonA"><span>A</span>Dirección - Admisión</a></li>
-							<li><a id="botonB"><span>B</span>Atención Apoderados</a></li>
-							<li><a id="botonC"><span>C</span>Salas Infant School</a></li>
-							<li><a id="botonD"><span>D</span>Salas Elementary School</a></li>
-							<li><a id="botonE"><span>E</span>Granja</a></li>
-							<li><a id="botonF"><span>F</span>Multicancha</a></li>
-							<li><a id="botonG"><span>G</span>Kiosko</a></li>
-							<li><a id="botonH"><span>H</span>Salas High School</a></li>
-							<li><a id="botonI"><span>I</span>Enfermeria</a></li>
-							<li><a id="botonJ"><span>J</span>Casino</a></li>
-							<li><a id="botonK"><span>K</span>Bodega</a></li>
-							<li><a id="botonL"><span>L</span>Biblioteca</a></li>
-							<li><a id="botonM"><span>M</span>Laboratorio</a></li>
-							<li><a id="botonN"><span>N</span>Gimnasio</a></li>	
-							<li><a id="toggle-lugares">Cerrar</a></li>						
-						</ul>
-					</div>
-
-					<div id="infra-desc">
-
-						<div id="cuadroA" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								DIRECCIÓN - ADMISION <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroB" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								ATENCIÓN APODERADOS <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroC" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								SALAS INFANT SCHOOL <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroD" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								SALAS ELEMENTARY SCHOOL <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroE" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								GRANJA <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroF" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								MULTICANCHA <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroG" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								KIOSKO <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroH" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								SALAS HIGH SCHOOL <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroI" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								ENFERMERIA <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroJ" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								CASINO <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroK" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								BODEGA <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroL" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								BIBLIOTECA <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroM" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								LABORATORIO <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-						<div id="cuadroN" class="cuadro dropdown open">
-
-							<h3 class="btn dropdown-toggle clearfix">
-								GIMNASIO <span class="pull-right cerrar-cuadro">X</span>
-							</h3>
-
-							<article class="dropdown-menu">
-
-								<img class="img-responsive" src="img/slider1.jpg">
-
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
-
-							</article>
-							
-						</div>
-
-					</div>
-
-				</div><!-- ROW -->
-					
-			</div><!-- CONTAINER -->
-
-			<div id="mapa">
-				<img class="img-responsive" src="img/mapa_colegio.svg">
+			<div class="titulo-seccion">
+				<div class="circulo">
+					<span>
+						<img src="img/iconos/infra.svg">
+					</span>
+				</div>	
+				<h1>Infra<span>estructura</span></h1>
 			</div>
 
-		</div><!--/main-->
-
-		<!--FOOTER-->
-		<footer id="footer" class="clearfix">
-
-			<div id="footer-pic">
-				<img src="img/footer.jpg">
+			<div class="container">
+				<h3 class="centrar">Con 10.000 M2 de áreas verdes, nuestro establecimiento cuenta con espacios equipados para nuestros alumnos.</h3>
 			</div>
 
 			<div class="container">
 
-				<div class="row">
+				<div id="lugares" class="dropdown" style="display: block;">
+					<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Seleccione un lugar<span class="toggle-wt"></span>
+					</button>
 
-					<div class="center clearfix">
-
-						<img class="img-responsive logo" src="img/logo-footer.png">
-
-						<div class="pull-right clearfix">
-							<p>Siguenos en:</p>
-							<a href="#" class="block pull-right">
-								<img class="img-responsive" src="img/iconos/ico-facebook.png">
-							</a>
-
-							<a href="#" class="block pull-right">
-								<img class="img-responsive" src="img/iconos/ico-twitter.png">
-							</a>
-						</div>
-
-					</div>
-
-					<div class="container vinculos">
-						<div class="row">
-							<div class="col-sm-2 col-xs-12">
-								<h5>Nuestro Colegio</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Proyecto Educativo</a>
-									</li>
-									<li>
-										<a href="#">Departamento de Inglés</a>
-									</li>
-									<li>
-										<a href="#">Infraestructura</a>
-									</li>
-									<li>
-										<a href="#">Video Institucional</a>
-									</li>
-									<li>
-										<a href="#">Equipo Directivo</a>
-									</li>
-									<li>
-										<a href="#">Equipo Docente</a>
-									</li>
-									<li>
-										<a href="#">Noticias</a>
-									</li>								
-								</ul>
-							</div>
-							<div class="col-sm-1 col-xs-12">
-								<h5>Ciclos</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Infant School</a>
-									</li>
-									<li>
-										<a href="#">Elementary</a>
-									</li>
-									<li>
-										<a href="#">High School</a>
-									</li>
-									<li>
-										<a href="#">Reglamentos</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Extraprogramáticas</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Fútbol varones</a>
-									</li>
-									<li>
-										<a href="#">Voleyball</a>
-									</li>
-									<li>
-										<a href="#">Gimnasia Ritmica Mujeres</a>
-									</li>
-									<li>
-										<a href="#">Patinaje Artístico</a>
-									</li>
-									<li>
-										<a href="#">Art Attack</a>
-									</li>
-									<li>
-										<a href="#">Teatro</a>
-									</li>
-									<li>
-										<a href="#">Guitarra</a>
-									</li>
-									<li>
-										<a href="#">Conjunto Instrumental</a>
-									</li>									
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Apoderados</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Uniforme</a>
-									</li>
-									<li>
-										<a href="#">Lista de Útiles</a>
-									</li>
-									<li>
-										<a href="#">Horarios de Clases</a>
-									</li>
-									<li>
-										<a href="#">Notas Net</a>
-									</li>
-									<li>
-										<a href="#">Menú del Casino</a>
-									</li>
-									<li>
-										<a href="#">Guías de Estudio</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-1 col-xs-12">
-								<h5>Calendario</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Cronograma Anual</a>
-									</li>
-									<li>
-										<a href="#">Eventos</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Admisión</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Requisitos</a>
-									</li>
-									<li>
-										<a href="#">Formulario de Postulación</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Contacto</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Trabaja con Nosotros</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					<ul id="lista-cuadros" class="dropdown-menu" aria-labelledby="dropdownMenu1" style="display: block;">
+						<li><a id="botonA"><span>A</span>Dirección - Admisión</a></li>
+						<li><a id="botonB"><span>B</span>Atención Apoderados</a></li>
+						<li><a id="botonC"><span>C</span>Salas Infant School</a></li>
+						<li><a id="botonD"><span>D</span>Salas Elementary School</a></li>
+						<li><a id="botonE"><span>E</span>Granja</a></li>
+						<li><a id="botonF"><span>F</span>Multicancha</a></li>
+						<li><a id="botonG"><span>G</span>Kiosko</a></li>
+						<li><a id="botonH"><span>H</span>Salas High School</a></li>
+						<li><a id="botonI"><span>I</span>Enfermeria</a></li>
+						<li><a id="botonJ"><span>J</span>Casino</a></li>
+						<li><a id="botonK"><span>K</span>Bodega</a></li>
+						<li><a id="botonL"><span>L</span>Biblioteca</a></li>
+						<li><a id="botonM"><span>M</span>Laboratorio</a></li>
+						<li><a id="botonN"><span>N</span>Gimnasio</a></li>	
+						<li><a class="centrar" id="toggle-lugares"><span class="glyphicon glyphicon-menu-up"></span></a></li>						
+					</ul>
 				</div>
+
+				<!-- SELECTOR DE LUGARES -->
+
+				<div id="infra-desc">
+
+					<div id="cuadroA" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							DIRECCIÓN - ADMISION <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/001.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroB" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							ATENCIÓN APODERADOS <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/002.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroC" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							SALAS INFANT SCHOOL <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/003.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroD" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							SALAS ELEMENTARY SCHOOL <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/004.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroE" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							GRANJA <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/005.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroF" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							MULTICANCHA <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/006.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroG" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							KIOSKO <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/007.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroH" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							SALAS HIGH SCHOOL <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/008.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroI" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							ENFERMERIA <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/009.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroJ" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							CASINO <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/010.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroK" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							BODEGA <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/011.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroL" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							BIBLIOTECA <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/012.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroM" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							LABORATORIO <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/013.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+					<div id="cuadroN" class="cuadro dropdown open" style="display: none;">
+
+						<h3 class="btn dropdown-toggle clearfix">
+							GIMNASIO <span class="pull-right cerrar-cuadro glyphicon glyphicon-remove"></span>
+						</h3>
+
+						<article class="dropdown-menu">
+
+							<img class="img-responsive" src="img/sample-pics/014.jpg">
+
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+
+						</article>
+						
+					</div>
+
+				</div>				
+
 			</div>
 
-			<div id="bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4 col-xs-12">
-							Las Araucarias Norte 8103, El Hualle 8032, La Florida.
+			<div id="mapa" class="hidden-xs hidden-sm">
+				<img class="img-responsive" src="img/mapa_colegio.svg">
+			</div>
+
+			<div id="mapa-movil" class="hidden-lg hidden-md bt-margin">
+				<img class="img-responsive" src="img/mapa_colegio.png">
+			</div>
+
+
+		</div><!-- FIN CONTENIDO -->
+
+		<footer>
+
+			<div class="centrar">
+				<img src="img/logo-footer.png">
+				<img src="img/logo.svg">
+			</div>
+
+			<div class="centrar">
+				<a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a>
+				<a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="vinculos clearfix">
+						<div class="col-md-2">
+							<h5 class="mayus">Nuestro Colegio</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Proyecto Educativo</a></li>
+								<li><a href="#">Mision y Vision</a></li>
+								<li><a href="#">Noticias</a></li>
+							</ul>
 						</div>
-						<div class="col-sm-4 col-xs-12">
-							Copyright©2015 - Colegio Santa María de Lo Cañas
+
+						<div class="col-md-2">
+							<h5 class="mayus">Admision 2016</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Requisitos</a></li>
+								<li><a href="#">Formulario de postulación</a></li>
+							</ul>
 						</div>
-						<div class="col-sm-4 col-xs-12">
-							Admisión 2296 5657, Secretaría  2285 1753 - 2286 7456
+
+						<div class="col-md-2">
+							<h5 class="mayus">Alumnos</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Noticias</a></li>
+								<li><a href="#">Horarios</a></li>
+								<li><a href="#">CRA</a></li>
+								<li><a href="#">Escuela de Lenguaje</a></li>
+								<li><a href="#">Básica</a></li>
+								<li><a href="#">Pre Básica</a></li>
+								<li><a href="#">Material de Estudio</a></li>								
+							</ul>
 						</div>
+
+						<div class="col-md-2">
+							<h5 class="mayus">Apoderados</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Efemerides</a></li>
+								<li><a href="#">Webmail</a></li>
+								<li><a href="#">Syscol</a></li>
+								<li><a href="#">Nptas Net</a></li>
+								<li><a href="#">Reuniones de curso</a></li>								
+							</ul>
+						</div>
+
+						<div class="col-md-2">
+							<h5 class="mayus">Academias</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Inscripcion</a></li>	
+							</ul>
+							<h5 class="mayus">Contacto</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Ubicación</a></li>
+								<li><a href="#">Telefono</a></li>
+								<li><a href="#">Webmail</a></li>	
+							</ul>
+						</div>
+
+						<div class="col-md-2">
+							<h5 class="mayus">Agenda</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Cronograma</a></li>	
+								<li><a href="#">Calendario de pruebas</a></li>	
+								<li><a href="#">Actividades</a></li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
-			</div>			
+			</div><!-- CONTAINER VINCULOS -->
+
+			<div class="img-shadow"></div>
+
+			<img class="img-absolute" src="img/sample-pics/006.jpg">
+
 		</footer>
-		<!--/FOOTER-->
-	</div>
+
+	</div><!-- FIN WRAPPER -->
+
 </body>
+
 </html>
+

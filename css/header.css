@@ -10,9 +10,6 @@ body {
     padding: 0;
     background: url("http://cdn.paper4pc.com/images/free-low-poly-wallpaper-1.jpg") top center no-repeat; /* COMENTAR */ 
 }
-.wrapper{
-	background: rgba(0,0,0,0.5);
-}
 #header{
 	font-family: "Lato";
 }
@@ -150,6 +147,9 @@ body {
 }
 #header.chevron #menu-principal{
 	background: #FFF;
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+ 	-moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
 }
 #header.chevron #menu-principal ul li a{
 	padding: 10px;
@@ -298,6 +298,9 @@ body {
 		background: #FFF;
 		float: none;
 		width: 100%;
+		 -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  		-moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  		box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
 	}
 	#header #menu-principal .navbar-brand {
 	    position: relative;

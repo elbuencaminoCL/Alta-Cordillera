@@ -4,369 +4,327 @@
 	<title>Colegio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href='https://fonts.googleapis.com/css?family=Exo:400,700,600,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,600,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	<link href="css/main.css" rel="stylesheet" media="screen">
+	
+	<link href="css/cthiers.css" rel="stylesheet" media="screen">
+
+	<link href="css/header.css" rel="stylesheet" media="screen">
+
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/infra.js"></script>
 	<script src="js/jquery.lettering.js" type="text/javascript"></script>
 	<!--[if IE]>
 	<script src="js/ie9.js"></script>
 	<![endif]-->
 </head>
 
-<body class="home">
+<body class="home" id="home">
+
 	<div class="wrapper">
-	
-		<!--header-->
+
+		<!-- HEADER -->
+
 		<header id="header" class="header clearfix">
 
-			<!-- Navs General -->
+			<!-- MENU SUPERIOR -->
+
 			<nav id="top-menu" class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="row">
-				<!-- Brand and toggle get grouped for better mobile display 
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>-->
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse colapsables">
+
+							<a class="telefono" href="#">Telefono +5612345678</a>
+
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="#">Video Institucional</a></li>
-								<li><a href="galerias.html">Galería</a></li>
-								<li><a href="#">Servicio Casino</a></li>
-								<li><a href="#"><img src="img/iconos/ico-facebook.png"></a></li>
-								<li><a href="#"><img src="img/iconos/ico-twitter.png"></a></li>
-								<li><a href="#">ES</a></li>
+								<li><a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a></li>
+								<li><a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a></li>
+								<li><a href="#">ES <span class="caret"></span></a></li>
 							</ul>
-						</div><!-- /.navbar-collapse -->
+						</div>
+
 					</div>
 				</div>
 			</nav>
 
+			<!-- MENU PRINCIPAL -->
+
 			<nav id="menu-principal" class="navbar navbar-default" role="navigation">
 				<div class="container">
-					<div class="row">
-			  <!-- Brand and toggle get grouped for better mobile display -->
-						<div id="hexagon" class="navbar-header">
+					<!--<div class="row clearfix">-->
+
+						<div class="nav-toggler-movil">
+
+							<div id="logotipo" class="navbar-header">
+								<a class="clearfix" href="index.html">
+									<img src="img/logo.png">									
+								</a>
+							</div>
+
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsables">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-							
-						</div>
+							</button>	
 
-			  <!-- Collect the nav links, forms, and other content for toggling -->
+						</div>					
+
 						<div class="collapse navbar-collapse colapsables">
 							
-						    <ul class="nav navbar-nav navbar-right">
-								<li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro colegio <span class="caret"></span></a>
+						    <ul class="nav navbar-nav"><!-- ELEMENTOS MENU -->
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro Colegio</a>
 						            <ul class="dropdown-menu">
-						                <li><a href="#">Proyecto Educativo</a></li>
-						                <li><a href="departamento.html">Bilingüismo</a></li>
-						                <li><a href="#">Infraestructura</a></li>
-						                <li><a href="#">Equipo Directivo</a></li>
-						                <li><a href="#">Equipo Docente</a></li>
-						             	<li><a href="noticias.html">Noticias</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
 						        </li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ciclos <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión 2016</a>
 						            <ul class="dropdown-menu">
-						            	<li><a href="ciclos.html">Ir a Ciclos</a></li>
-						                <li><a href="#">Infant School</a></li>
-						                <li><a href="#">Elementary</a></li>
-						                <li><a href="#">High School</a></li>
-						                <li><a href="guias.html">Guías de Estudio</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
 						        </li>
-
-						        <li><a href="talleres.html">Extra Programaticas</a></li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados <span class="caret"></span></a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alumnos</a>
 						            <ul class="dropdown-menu">
-						                <li><a href="#">Uniforme</a></li>
-						                <li><a href="#">Lista de Útiles</a></li>
-						                <li><a href="#">Horario de Clases</a></li>
-						                <li><a href="#">Notas Net</a></li>
-						                <li><a href="#">Menú del Casino</a></li>
-						                <li><a href="#">Administración y Finanzas</a></li>	                
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
-						        </li>
-	
-					            <li><a href="#">Calendario</a></li>
-					            
-								<li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión <span class="caret"></span></a>
+						        </li>	
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados</a>
 						            <ul class="dropdown-menu">
-						            	<li><a href="admision.html">Ir a Admisión</a></li>
-						                <li><a href="#">Requisitos</a></li>
-						                <li><a href="#">Calendario de Postulación</a></li>
-						                <li><a href="#">Formulario de Postulación</a></li>
-						                <li><a href="#">Aranceles</a></li>               
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
 						        	</ul>
 						        </li>
 
-					            <li><a href="#">Contacto</a></li>
-						    </ul>
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academias</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>						        						        					        
 
-						</div><!-- /.navbar-collapse -->
-					</div>
-				</div>
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agenda</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Webmail</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>
+
+						        <li class="dropdown">
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
+						            <ul class="dropdown-menu">
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						                <li><a href="#">Elemento</a></li>
+						        	</ul>
+						        </li>						        
+
+						    </ul><!-- FIN ELEMENTOS MENU -->
+
+						</div>
+				<!--</div> ROW -->
+				</div><!-- CONTAINER -->
 			</nav>
-			<!-- /Navs General -->
+
+			<!-- FIN MENU PRINCIPAL -->
 
 		</header>
-		<!--/header-->
 
-		<!--main-->
+		<!-- FIN HEADER -->
+
+		<!-- CONTENIDO -->
+
 		<div id="main" class="clearfix">
 
-			<!--/ENCABEZADO CON IMAGEN Y TÍTULO-->
-			<div id="foto-encabezado" class="">
-				<img class="img-responsive" src="img/banner-extra.jpg">
-				<div id="filtro-encab"></div>
-					<div class="titulo-encabezado container text-center">
-						<h3>GUÍAS DE ESTUDIO</h3>
-					</div>
-			</div>
-			<!--/ENCABEZADO CON IMAGEN Y TÍTULO-->
-
-			<div class="center upper descripcion-guia">
-				<img src="img/iconos/ico-guia.svg"><br>
-				<h4>En esta sección podrás descargar material de estudio correspondiente a tu curso y asignatura.</h4>
+			<div class="img-seccion">
+				<div class="img-shadow"></div>
+				<img class="img-absolute" src="img/sample-pics/002.jpg">
 			</div>
 
-			<div id="buscador-guias">
-				<div class="container clearfix">
-					<div class="col-sm-4 col-xs-12"><h4 class="upper text-right">Guías disponibles</h4></div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle t-lato" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Seleccione un curso para ver las guías
-							<span class="glyphicon glyphicon-menu-down"></span>
-							</button>
-
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-								<li><a href="#">Nombre curso número 1</a></li>
-								<li><a href="#">Nombre curso número 2</a></li>
-								<li><a href="#">Nombre curso número 3</a></li>
-								<li><a href="#">Nombre curso número 4</a></li>
-								<li><a href="#">Nombre curso número 5</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-2 col-xs-12">
-						<a class="btn btn-primary btn-md btn-block btn-buscar" href="guias_seleccion.html" role="button">BUSCAR</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="container relative contenedor-guias">
-
-				<div class="panel panel-default no-border">
-					<div class="panel-body center no-border">
-						<img src="img/iconos/ico-guia-busqueda.svg">
-						<p>AÚN NO SE HA REALIZADO NINGUNA BÚSQUEDA
-						SELECCIONA UN CURSO PARA VER LAS GUÍAS DISPONIBLES</p>
-					</div>
-				</div>
-				
-			</div>
-
-		</div><!--/main-->
-
-		<!--FOOTER-->
-		<footer id="footer" class="clearfix margen-footer">
-
-			<div id="footer-pic">
-				<img src="img/footer.jpg">
+			<div class="titulo-seccion">
+				<div class="circulo">
+					<span>
+						<img src="img/iconos/guias.svg">
+					</span>
+				</div>	
+				<h1>Guias de <span>Estudio</span></h1>
 			</div>
 
 			<div class="container">
-
-				<div class="row">
-
-					<div class="center clearfix">
-
-						<img class="img-responsive logo" src="img/logo-footer.png">
-
-						<div class="pull-right clearfix">
-							<p>Siguenos en:</p>
-							<a href="#" class="block pull-right">
-								<img class="img-responsive" src="img/iconos/ico-facebook.png">
-							</a>
-
-							<a href="#" class="block pull-right">
-								<img class="img-responsive" src="img/iconos/ico-twitter.png">
-							</a>
-						</div>
-
-					</div>
-
-					<div class="container vinculos">
-						<div class="row">
-							<div class="col-sm-2 col-xs-12">
-								<h5>Nuestro Colegio</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Proyecto Educativo</a>
-									</li>
-									<li>
-										<a href="#">Departamento de Inglés</a>
-									</li>
-									<li>
-										<a href="#">Infraestructura</a>
-									</li>
-									<li>
-										<a href="#">Video Institucional</a>
-									</li>
-									<li>
-										<a href="#">Equipo Directivo</a>
-									</li>
-									<li>
-										<a href="#">Equipo Docente</a>
-									</li>
-									<li>
-										<a href="#">Noticias</a>
-									</li>								
-								</ul>
-							</div>
-							<div class="col-sm-1 col-xs-12">
-								<h5>Ciclos</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Infant School</a>
-									</li>
-									<li>
-										<a href="#">Elementary</a>
-									</li>
-									<li>
-										<a href="#">High School</a>
-									</li>
-									<li>
-										<a href="#">Reglamentos</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Extraprogramáticas</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Fútbol varones</a>
-									</li>
-									<li>
-										<a href="#">Voleyball</a>
-									</li>
-									<li>
-										<a href="#">Gimnasia Ritmica Mujeres</a>
-									</li>
-									<li>
-										<a href="#">Patinaje Artístico</a>
-									</li>
-									<li>
-										<a href="#">Art Attack</a>
-									</li>
-									<li>
-										<a href="#">Teatro</a>
-									</li>
-									<li>
-										<a href="#">Guitarra</a>
-									</li>
-									<li>
-										<a href="#">Conjunto Instrumental</a>
-									</li>									
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Apoderados</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Uniforme</a>
-									</li>
-									<li>
-										<a href="#">Lista de Útiles</a>
-									</li>
-									<li>
-										<a href="#">Horarios de Clases</a>
-									</li>
-									<li>
-										<a href="#">Notas Net</a>
-									</li>
-									<li>
-										<a href="#">Menú del Casino</a>
-									</li>
-									<li>
-										<a href="#">Guías de Estudio</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-1 col-xs-12">
-								<h5>Calendario</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Cronograma Anual</a>
-									</li>
-									<li>
-										<a href="#">Eventos</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Admisión</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Requisitos</a>
-									</li>
-									<li>
-										<a href="#">Formulario de Postulación</a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-12">
-								<h5>Contacto</h5>
-								<ul class="hidden-xs">
-									<li>
-										<a href="#">Trabaja con Nosotros</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+				<h3 class="centrar">En esta sección puedes descargar el material de estudio disponible para las distintas asignaturas</h3>
 			</div>
 
-			<div id="bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-4 col-xs-12">
-							Las Araucarias Norte 8103, El Hualle 8032, La Florida.
+			<div class="titulo-uno">
+
+				<div class="container centrar">
+
+					<form class="selector-categoria">
+
+						<label>Guías disponibles</label>
+
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+
+						&nbsp;
+
+						<button type="submit" class="btn btn-cuatro">Buscar</button>
+
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="clearfix bt-margin">
+
+				<div class="centrar">
+					<img class="img-ico-lg" src="img/iconos/buscar.svg">
+				</div>
+
+				<div class="centrar mayus">
+					Aun no se ha realizado ninguna busqueda, Seleccione un curso para ver las guias disponibles.
+				</div>
+
+			</div>
+
+		</div><!-- FIN CONTENIDO -->
+
+		<footer>
+
+			<div class="centrar">
+				<img src="img/logo-footer.png">
+				<img src="img/logo.svg">
+			</div>
+
+			<div class="centrar">
+				<a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a>
+				<a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="vinculos clearfix">
+						<div class="col-md-2">
+							<h5 class="mayus">Nuestro Colegio</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Proyecto Educativo</a></li>
+								<li><a href="#">Mision y Vision</a></li>
+								<li><a href="#">Noticias</a></li>
+							</ul>
 						</div>
-						<div class="col-sm-4 col-xs-12">
-							Copyright©2015 - Colegio Santa María de Lo Cañas
+
+						<div class="col-md-2">
+							<h5 class="mayus">Admision 2016</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Requisitos</a></li>
+								<li><a href="#">Formulario de postulación</a></li>
+							</ul>
 						</div>
-						<div class="col-sm-4 col-xs-12">
-							Admisión 2296 5657, Secretaría  2285 1753 - 2286 7456
+
+						<div class="col-md-2">
+							<h5 class="mayus">Alumnos</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Noticias</a></li>
+								<li><a href="#">Horarios</a></li>
+								<li><a href="#">CRA</a></li>
+								<li><a href="#">Escuela de Lenguaje</a></li>
+								<li><a href="#">Básica</a></li>
+								<li><a href="#">Pre Básica</a></li>
+								<li><a href="#">Material de Estudio</a></li>								
+							</ul>
 						</div>
+
+						<div class="col-md-2">
+							<h5 class="mayus">Apoderados</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Efemerides</a></li>
+								<li><a href="#">Webmail</a></li>
+								<li><a href="#">Syscol</a></li>
+								<li><a href="#">Nptas Net</a></li>
+								<li><a href="#">Reuniones de curso</a></li>								
+							</ul>
+						</div>
+
+						<div class="col-md-2">
+							<h5 class="mayus">Academias</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Inscripcion</a></li>	
+							</ul>
+							<h5 class="mayus">Contacto</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Ubicación</a></li>
+								<li><a href="#">Telefono</a></li>
+								<li><a href="#">Webmail</a></li>	
+							</ul>
+						</div>
+
+						<div class="col-md-2">
+							<h5 class="mayus">Agenda</h5>
+							<ul class="hidden-sm hidden-xs">
+								<li><a href="#">Cronograma</a></li>	
+								<li><a href="#">Calendario de pruebas</a></li>	
+								<li><a href="#">Actividades</a></li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
-			</div>			
-		</footer><!--/FOOTER-->
-	</div>
+			</div><!-- CONTAINER VINCULOS -->
+
+			<div class="img-shadow"></div>
+
+			<img class="img-absolute" src="img/sample-pics/006.jpg">
+
+		</footer>
+
+	</div><!-- FIN WRAPPER -->
+
 </body>
+
 </html>
+
