@@ -6,7 +6,7 @@
 *{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Lato";
+  font-family: 'Open Sans';
   outline: none;
   box-shadow: none;
 }
@@ -166,7 +166,7 @@ ul{
     width: auto!important;
   }
   .bt-margin{
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 
 }
@@ -179,8 +179,8 @@ ul{
 }
 .btn-uno{
   color: #FFF;
-  background: #A66;
-  border: 2px solid #A66;
+  background: #257FA7;
+  border: 2px solid #257FA7;
   border-radius: 100px;
   font-size: 16px;
   padding: 7px 30px;
@@ -189,7 +189,7 @@ ul{
 }
 .btn-uno:hover{
   background: #FFF;
-  color: #A66;
+  color: #257FA7;
 }
 .btn-dos{
   color: #FFF;
@@ -511,8 +511,7 @@ h1{
   padding: 0px 0px 15px 0px;
   border-bottom: 8px solid # 1D6585;
   margin: 0px auto;
-  font-size: 32px;
-  font-family: "Exo";
+  font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -533,13 +532,6 @@ h3{
   margin: 0px 0px 40px 0px;
   font-size: 20px;
 }
-h4{
-  text-transform: uppercase;
-  margin: 0px 0px 15px 0px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #666;
-}
 h5{
   font-size: 16px;
   font-weight: 600;
@@ -547,24 +539,22 @@ h5{
 }
 h6{}
 .titulo-uno{
-  border-bottom: 2px solid #DDD;
-  margin: 0px 0px 30px 0px;
-}
-.titulo-dos{}
-.titulo-tres{
-  background: #1D6585;
-  padding: 10px;
-  margin: 0px 0px 30px 0px;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+  margin: 30px 0px;
 }
 .titulo-tres span{
   display: block;
   font-size: 18px;
   font-weight: 600;
-  color: #FFF;
-  border: 1px dashed #FFF;
-  padding: 15px;
+  color: #585858;
+  padding: 10px 0px;
   text-align: center;
+  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #DDD;
+  margin: 0px 15px 30px;
 }
+
 .titulo-cuatro{
   display: flex;
   align-items: center;
@@ -581,44 +571,6 @@ h6{}
 .titulo-cuatro.md h2,
 .titulo-cuatro.md a{
   margin: 0px 0px;
-}
-.titulo-seccion{
-  height: 230px;
-  background: #F2F2F2;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-  margin: 0px 0px 40px 0px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-}
-.titulo-seccion .circulo{
-  height: 220px;
-  width: 220px;
-  margin: 0px auto;
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 200px;
-  background: #1D6585;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
-}
-.titulo-seccion .circulo span{
-  display: flex;
-  width: 190px;
-  height: 190px;
-  margin: 15px;
-  border: 1px dashed #FFF;
-  border-radius: 200px;
-}
-.titulo-seccion .circulo span img{
-  width: 50%;
-  display: block;
-  margin: auto;
 }
 
 /* TITULOS MOVIL */
@@ -658,14 +610,6 @@ h6{}
 
 }
 
-/* PANELES */
-
-/* PANELES MOVIL*/
-
-@media only screen and (max-width: 992px) { 
-
-
-}
 
 /* RECUADRO */
 
@@ -679,12 +623,12 @@ h6{}
   position: relative;
 }
 .recuadro p{
-  margin: 0px 0px;
+  margin: 8px 0px;
   font-size: 16px;
   color: #FFF;
 }
 .recuadro input{
-  background: #633;
+  background: rgba(0,0,0,0.3);
   padding: 8px 15px;
   border: 0px;
   border-radius: 100px;
@@ -702,13 +646,25 @@ h6{}
 }
 .recuadro .cerrar{
   background: none;
-  color: #FFF;
+  color: rgba(0,0,0,0.2);
   position: absolute;
   top: 25%;
-  right: 25px;
+  right: 15px;
   border: 0px;
   height: 50%;
   padding: 0px;
+  text-shadow: none;
+  opacity: 1;
+  z-index: 300;
+}
+.recuadro .cerrar:hover{
+ color: rgba(0,0,0,0.4);
+}
+
+@media only screen and (max-width: 1200px) {
+  .recuadro p {
+    margin: 0px;
+  }
 }
 
 /* RECUADRO MOVIL*/
@@ -723,7 +679,7 @@ h6{}
   .recuadro p{
     text-align: center;
     margin: 0px auto 15px auto;
-    width: 70%;
+    width: 78%;
   }
   .recuadro input{
     width: 100%;
@@ -775,18 +731,10 @@ form select.form-control{
   border-color: #CCC;
 }
 
-/* FORMULARIOS MOVIL*/
-
-@media only screen and (max-width: 992px) { 
-  
-
-}
-
 /* SELECTOR DE CATEGORIA */
 
 .selector-categoria{
-  padding: 0px 0px 30px 0px;
-  padding: 0px 0px 30px 0px;
+  padding: 30px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -840,41 +788,39 @@ form select.form-control{
 }
 .fecha-noticia{
   font-size: 14px;
-  color: #666;
+  font-weight: 600;
+  color: #1D6585;
   margin: 0px 0px 30px 0px;
 }
-.fecha-noticia img{
-  margin: 0px 10px 0px 0px;
+.fecha-noticia img {
+    margin: -3px 5px 0px 0px;
 }
 
 /* COMPARTIR */
 
 .compartir{
-  color: # 1D6585;
   text-align: right;
   line-height: 24px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 30px 0px 40px 0px;
+  margin: 30px 0px 20px 0px;
   font-size: 16px;
   font-weight: 600;  
 }
 .compartir a{
   display: inline-block;
-  border: 1px solid #1D6585;
-  border-radius: 100px;
-  width: 24px;
-  height: 24px;
 }
 .compartir a:nth-of-type(1){
   margin: 0px 10px;
+}
+.compartir a:hover{
+  opacity: 0.7;
 }
 .compartir a img{
   width: 100%;
   height: auto;
   display: block;
-  padding: 4px;
 }
 
 /* NAVEGACIONES */
@@ -920,61 +866,8 @@ form select.form-control{
   position: absolute;
   pointer-events: none;
 }
-.nav-trio .active:after {
-  border-color: rgba(153, 85, 85, 0);
-  border-top-color: #995555;
-  border-width: 20px;
-  margin-left: -20px;
-}
-.nav-trio .active:before {
-  border-color: rgba(153, 85, 85, 0);
-  border-top-color: #995555;
-  border-width: 21px;
-  margin-left: -21px;
-}
 
-/* FOOTER */
 
-footer{
-  position: relative;
-  overflow: hidden;
-  padding: 50px 0px 0px 0px;
-}
-.vinculos{
-  padding: 30px 15px;
-  color: #FFF;
-  border-radius: 20px;
-  border: 2px solid #FFF;
-  margin: 0px 0px 30px 0px;
-}
-.vinculos a{
-  color: #FFF;
-}
-footer .img-shadow{
-  background: rgba(0,0,0,0.7);
-}
-footer > .centrar img{
-  display: block;
-  margin: 0px auto;
-}
-footer > .centrar img + img{
-  max-width: 200px;
-  margin: 30px auto;
-}
-footer .centrar + .centrar a{
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  margin: 0px 10px 30px 10px;
-  border-radius: 100px;
-  border: 1px solid #FFF;
-}
-footer .centrar + .centrar a img{
-  display: block;
-  height: 60%;
-  width: auto;
-  margin: 20% auto;
-}
 
 /* GALERIAS */
 
@@ -1072,27 +965,6 @@ footer .centrar + .centrar a img{
 .col-album a{
   height: 100%;
   width: 100%;
-}
-
-@media only screen and (max-width: 992px){
-
-  .col-album{
-    height: 200px;
-  }
-  footer .img-absolute{
-    height: 120%!important;
-    width: auto!important;
-  }
-  .vinculos{
-    margin: 0px 15px 30px 15px;
-  }
-  .vinculos h5{
-    text-align: center;
-  }
-  .vinculos .col-md-2:last-of-type h5{
-    margin: 0px 0px;
-  }
-
 }
 
 /* PANEL */

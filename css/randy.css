@@ -66,9 +66,6 @@ h1{
   margin: 0;
   font-size: 24px;
 }
-.h1-veintidos{
-  font-size: 22px;
-}
 h2 {
   margin: 0;
   font-size: 20px;
@@ -77,7 +74,6 @@ h3 {
   margin: 0;
   font-size: 18px;
 }
-h4{}
 p {
   margin: 0;
   font-size: 15px;
@@ -140,36 +136,37 @@ a:hover, a:focus, a:active {
 }
 #foto-encabezado {
   width: 100%;
-  height: 248px;
+  height: 400px;
   overflow: hidden;
-  margin-top: 100px;
-}
-#foto-encabezado #filtro-encab {
-    opacity: 0.3;
-    width: 100%;
-    height: 248px;
-    background-color: #000;
-    position: absolute;
-    top: 100px;
-}
-#foto-encabezado img {
-  margin-top: -5%;
-}
-.titulo-encabezado {
-    height: auto;
-    position: absolute;
-    top: 205px;
-    left: calc(50% - 585px);
-}
-.titulo-encabezado span{
-  top: -5px;
   position: absolute;
 }
-.titulo-encabezado h1 {
-    display: inline;
-    padding: 5px 0px 5px 55px;
+#foto-encabezado #filtro-encab {
+    opacity: 0.67;
+    width: 100%;
+    height: 400px;
+    background-color: #032022;
+    position: absolute;
+    top: 0;
+}
+#foto-encabezado img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto!important;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -6;
+  max-width: 2000px;
+}
+h2.titulo-seccion span img{
+  max-height: 100px;
+}
+h2.titulo-seccion span {
+    display: inline-block;
+    padding: 5px 30px;
     color: #fff;
     font-weight: 600;
+    font-size: 25px;
+    margin: 215px 0px 75px 0px;
 }
 
 /*TRANSITIONS*/
@@ -480,7 +477,7 @@ a {
 /* ATRIBUTOS PARA NOTICIAS Y ACCESOS DIRECTOS - HOME */ /* ATRIBUTOS PARA NOTICIAS Y ACCESOS DIRECTOS - HOME */ /* ATRIBUTOS PARA NOTICIAS Y ACCESOS DIRECTOS - HOME */ 
 #noti-accesos{
   background: linear-gradient(90deg, #fff 75%, #DB4C92 25%);
-  height: 768px;
+  height: 715px;
   overflow: hidden;
 } 
 /* ATRIBUTOS PARA NOTICIAS */
@@ -497,16 +494,12 @@ a {
   color: #1D6585;
 }
 #card-noti .hidden-xs a{
-  height: 175px;
+  height: 125px;
   overflow: hidden !important;
   border-radius: 10px;
   display: block;
 }
 #card-noti .hidden-xs a img{
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  margin-top: 5%;
 }
 
 #card-noti .detalle{
@@ -517,6 +510,7 @@ a {
   border-top: 4px solid #1D6585; 
   border-radius: 10px;
   position: relative;
+  height: 280px;
 }
 #card-noti .detalle h4{
   color: #1D6585;
@@ -533,6 +527,9 @@ a {
   color: #1D6585;
   text-align: right; 
   padding-bottom: 20px;
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
 }
 .ver-mas{
   display: block;
@@ -543,9 +540,11 @@ a {
   color: #257FA7;
   background-color: #fff;
   border: 1px solid #257FA7;
-  border-radius: 3px;
   text-decoration: none;
   border-radius: 25px;
+  position: absolute;
+  bottom: 15px;
+  width: calc(100% - 30px);
 }
 .ver-mas:hover{
   background-color: #257FA7;
@@ -607,7 +606,7 @@ a {
   margin-top: 3px;
 }
 #accesos-home .panel-title a{
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: #DB4C92;
 }
@@ -684,6 +683,7 @@ a {
   margin-bottom: 10px;
   color: #DB4C92;
   font-weight: 700;
+  font-size: 13px;
   text-transform: uppercase;
   position: relative;
 }
@@ -1187,11 +1187,96 @@ blockquote {
   transform: scale(1.5);
   margin-top: 5%;
 }
+/* ATRIBUTOS PARA NOTICIAS PAGE INTERIOR */
+.noticias-page .seccion-encabezado{
+  margin-bottom: 70px;
+}
+.titulo-page {
+  display: inline-block;
+  color: #1D6585;
+  padding: 0px 0px 10px;
+  border-bottom: 2px solid #1D6585;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.noticias-page #main, .noticias-detalle #main{
+  margin-bottom: 70px;
+}
+.noticias-page #noticias-home {
+  padding: 0px 15px;
+  margin: 20px 0px 30px;
+}
+.noticias-page #noticias-home #card-noti{
+  margin-bottom: 30px;
+}
+.noticias-detalle .seccion-encabezado {
+  margin-bottom: 70px;
+}
+.ficha-noticia {
+  border: 1px solid #1D6585;
+  border-radius: 20px;
+  padding: 30px 50px;
+}
+.ficha-noticia h3{
+  color: #1D6585;
+  padding: 0px 0px 15px;
+  border-bottom: 1px solid #DDD;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ficha-noticia .categoria-noti{
+  padding: 10px 0px 30px;
+}
+.ficha-noticia .categoria-noti span{
+  color: #585858;
+  font-weight: 600;
+}
+  .ficha-noticia {
+    margin-bottom: 50px;
+  }
+/* ATRIBUTOS PARA INFRAESTRUCTURA - PAGE */
+.infra-page #main h3.centrar{
+  margin: 20px 0px 50px;
+}
+
+
+/* ATRIBUTOA PARA GUIAS DE ESTUDI - PAGE */
+.guias-estudio #main h3.centrar {
+  margin: 20px 0px 50px;
+}
+
+/* ATRIBUTOS PARA GENÉRICA - PAGE */
+.generica-page #main {
+  margin-bottom: 70px;
+}
+.generica-page #main h3.centrar {
+  margin: 20px 0px 50px;
+}
+
+
+
+
+
+
+
+
+/* PROVISIONAL POR SI QUEDA CONFLICTO */
+#main .seccion-encabezado {
+  margin-bottom: 70px;
+}
+/* PROVISIONAL POR SI QUEDA CONFLICTO */
+
 
 @media only screen and (max-width: 1200px){
   #accesos-home {
     background: linear-gradient(90deg, #fff 25px, #DB4C92 calc(25px - 100%));
     padding: 0px 0px 280px 50px;
+  }
+  #card-noti .hidden-xs a {
+    height: 110px;
+  }
+  #card-noti .detalle{
+    height: 300px;
   }
 }
 
@@ -1199,8 +1284,6 @@ blockquote {
 @media only screen and (max-width: 992px){
   
   #noti-accesos {
-    background: none;
-    height: auto;
   }
   #extra {
     background-color: #333333;
@@ -1230,6 +1313,26 @@ blockquote {
     margin: 0px 0px;
     text-align: center;
   }
+  #foto-encabezado { 
+    margin-top: 70px;     
+    height: 300px;        
+  }
+  h2.titulo-seccion span {
+    margin: 165px 0px 95px 0px;
+  }
+  .selector-categoria {
+    padding: 25px 0px 15px;
+  }
+  .ficha-noticia {
+  margin-bottom: 50px;
+  }
+  .noticias-detalle #card-noti .detalle {
+  margin-bottom: 30px;
+  }
+
+  .noticias-detalle #card-noti .detalle {
+    height: 135px;
+  }
   
 }
 /*-- MOBILE XS --*/ /*-- MOBILE XS --*/ /*-- MOBILE XS --*/ /*-- MOBILE XS --*/ /*-- MOBILE XS --*/ /*-- MOBILE XS --*/ /*-- MOBILE XS --*/ /*-- MOBILE XS --*/
@@ -1238,7 +1341,25 @@ blockquote {
 @media (max-width: 767px) { 
 
 body{}
-
+#main .seccion-encabezado{
+  margin-bottom: 50px;
+}
+h1{
+  margin: 0;
+  font-size: 20px;
+}
+h2 {
+  margin: 0;
+  font-size: 18px;
+}
+h3 {
+  margin: 0;
+  font-size: 15px;
+}
+p {
+  margin: 0;
+  font-size: 13px;
+}
 .carousel-inner > .item {
   height: 420px;
 }
@@ -1347,5 +1468,45 @@ body{}
 #footer ul {
     text-align: center;
 }
+#foto-encabezado {     
+    height: 250px;        
+}
+#foto-encabezado img{
+  width: 900px;
+}
+h2.titulo-seccion span {
+    margin: 155px 0px 85px 0px;
+}
+h2.titulo-seccion span img {
+    max-height: 70px;
+}
+.noticias-page #card-noti .detalle {
+    height: auto;
+    min-height: 135px;
+}
+.noticias-page #noticias-home #card-noti{
+  margin-bottom: 10px;
+}
+.ficha-noticia {
+  padding: 15px;
+}
+.ficha-noticia h3{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.ficha-noticia .categoria-noti {
+    padding: 10px 0px 15px;
+}
+.ficha-noticia .img-mb{
+  margin-bottom: 20px;
+}
+.ficha-noticia .fecha-noticia {
+  margin-bottom: 10px;
+}
+
+#card-noti .detalle {
+    height: 135px;
+}
+
 
 }/* FINA DE MOBILE XS */

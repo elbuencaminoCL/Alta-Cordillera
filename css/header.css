@@ -443,10 +443,6 @@ body {
         font-size: 12px;
     	padding: 4px 8px;
 	}
-	#header .cajon{
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 54% 15%, 46% 15%, 40% 100%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 54% 15%, 46% 15%, 40% 100%, 0 100%);
-	}
 
 }
 

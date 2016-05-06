@@ -4,13 +4,12 @@
 	<title>Colegio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href='https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	
-	<link href="css/cthiers.css" rel="stylesheet" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">	
 	<link href="css/header.css" rel="stylesheet" media="screen">
+	<link href="css/cthiers.css" rel="stylesheet" media="screen">
+	<link href="css/randy.css" rel="stylesheet" media="screen">
 
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -21,25 +20,37 @@
 	<!--[if IE]>
 	<script src="js/ie9.js"></script>
 	<![endif]-->
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+		    var scroll = $(window).scrollTop();
+
+		    if (scroll >= 100) {
+		        $("#header").addClass("chevron");
+		    } else {
+		        $("#header").removeClass("chevron");
+		    }
+		});
+	</script>
 </head>
 
-<body class="home" id="home">
+<body class="home noticias-page" id="home">
 
 	<div class="wrapper">
 
 		<!-- HEADER -->
+		<header id="header" class="header clearfix navbar-fixed-top">
 
-		<header id="header" class="header clearfix">
+			<div class="cajon">
 
-			<!-- MENU SUPERIOR -->
-
-			<nav id="top-menu" class="navbar navbar-default" role="navigation">
+				<!-- MENU SUPERIOR -->
+				<nav id="top-menu" class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="row">
 
 						<div class="collapse navbar-collapse colapsables">
-
-							<a class="telefono" href="#">Telefono +5612345678</a>
+							<ul class="nav navbar-nav navbar-left">
+								<li><a class="telefono" href="#">Teléfono: + 56 51-2211084</a></li>
+							</ul>
 
 							<ul class="nav navbar-nav navbar-right">
 								<li><a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a></li>
@@ -50,20 +61,25 @@
 
 					</div>
 				</div>
-			</nav>
+				</nav><!-- /FIN MENU SUPERIOR -->
 
-			<!-- MENU PRINCIPAL -->
-
-			<nav id="menu-principal" class="navbar navbar-default" role="navigation">
+				<!-- MENU PRINCIPAL -->
+				<nav id="menu-principal" class="navbar navbar-default" role="navigation">
 				<div class="container">
-					<!--<div class="row clearfix">-->
+					<div class="row clearfix">
 
 						<div class="nav-toggler-movil">
 
-							<div id="logotipo" class="navbar-header">
-								<a class="clearfix" href="index.html">
-									<img src="img/logo.png">									
+							<div id="mobile-logo">
+								<a class="clearfix" href="#">
+									<img src="img/logo.svg">
+									<h4>
+										COLEGIO<br>
+										ALTA CORDILLERA
+									</h4>													
 								</a>
+
+								<div class="triangulo"></div>
 							</div>
 
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsables">
@@ -76,11 +92,11 @@
 						</div>					
 
 						<div class="collapse navbar-collapse colapsables">
-							
-						    <ul class="nav navbar-nav"><!-- ELEMENTOS MENU -->
+
+							<ul class="nav navbar-nav navbar-left"><!-- ELEMENTOS MENU -->
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro Colegio</a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro Colegio<span class="caret"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Elemento</a></li>
 						                <li><a href="#">Elemento</a></li>
@@ -90,17 +106,7 @@
 						        </li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión 2016</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alumnos</a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alumnos<span class="caret"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Elemento</a></li>
 						                <li><a href="#">Elemento</a></li>
@@ -109,8 +115,18 @@
 						        	</ul>
 						        </li>	
 
+						        <li><a href="#">Admisión</a></li>
+
+						        <li><a href="#">Agenda</a></li>
+
+						    </ul><!-- FIN ELEMENTOS MENU -->
+							
+						    <ul class="nav navbar-nav navbar-right"><!-- ELEMENTOS MENU -->
+
+						        <li><a href="#">Actividades Extraprogramáticas</a></li>						        
+
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados</a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados<span class="caret"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Elemento</a></li>
 						                <li><a href="#">Elemento</a></li>
@@ -119,109 +135,69 @@
 						        	</ul>
 						        </li>
 
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academias</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>						        						        					        
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agenda</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Webmail</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>						        
+						        <li><a href="#">Contacto</a></li>
 
 						    </ul><!-- FIN ELEMENTOS MENU -->
 
 						</div>
-				<!--</div> ROW -->
+					</div><!-- ROW -->
 				</div><!-- CONTAINER -->
-			</nav>
+				</nav><!-- FIN MENU PRINCIPAL -->
 
-			<!-- FIN MENU PRINCIPAL -->
+			</div>
 
-		</header>
+			<div id="extra-logo">
+				<a class="clearfix" href="#">	
+					<span>COLEGIO ALTA CORDILLERA</span>
+					<img src="img/logo.svg">														
+				</a>
 
-		<!-- FIN HEADER -->
+				<div class="triangulo"></div>
+			</div>
+
+		</header><!-- FIN HEADER -->
 
 		<!-- CONTENIDO -->
 
 		<div id="main" class="clearfix">
 
-			<div class="img-seccion">
-				<div class="img-shadow"></div>
-				<img class="img-absolute" src="img/sample-pics/017.jpg">
+			<!--NUEVO CON ICONO-ENCABEZADO CON IMAGEN Y TÍTULO-->
+			<div class="seccion-encabezado">
+				<div id="foto-encabezado">
+					<img src="img/cabecera-randy.jpg">
+					<div id="filtro-encab"></div>
+				</div>
+				<h2 class="titulo-seccion center relative"><span><img src="img/iconos/noticias.svg"></span></h2>
+			</div><!--/FIN ENCABEZADO CON IMAGEN Y TÍTULO-->
+
+			<div class="container center">
+				<h1 class="titulo-page upper">noticias</h1>
 			</div>
 
-			<div class="titulo-seccion">
-				<div class="circulo">
-					<span>
-						<img src="img/iconos/noticias.svg">
-					</span>
-				</div>	
-				<h1>Noticias</h1>
-			</div>
-
-			<div class="container">
-
+			<!-- BURBUJA ALERTA - SUSCRIBIRSE -->
+			<div class="container">				
 				<form class="recuadro clearfix vertical-flex alert alert-dismissible" role="alert">
-
-					<button type="button" class="close cerrar" data-dismiss="alert" aria-label="Close">X</button>
+					<button type="button" class="close cerrar" data-dismiss="alert" aria-label="Close">
+						<span class="glyphicon glyphicon-remove"></span>
+					</button>
 
 					<div class="col-md-5 col-xs-12">
-
 						<p>Suscribite y recibe todas las novedades en tu Mail</p>
-
 					</div>
 
 					<div class="col-md-4 col-xs-12">
-
 						<input type="mail" placeholder="Escribe aquí tu mail">
-
 					</div>
 
 					<div class="col-md-3 col-xs-12">
-
 						<button type="submit" class="btn btn-uno">Suscribirse</button>
-
 					</div>
-
 				</form>
+			</div><!-- /FIN BURBUJA ALERTA - SUSCRIBIRSE -->
 
-			</div>
-
+			<!-- Selector de categorias -->
 			<div class="titulo-uno">
-
 				<div class="container centrar">
-
 					<form class="selector-categoria">
 
 						<label>CATEGORÍAS</label>
@@ -233,135 +209,186 @@
 							<option>4</option>
 							<option>5</option>
 						</select>
-
 					</form>
-
 				</div>
-
-			</div>
+			</div><!-- /Fin selector de categorias -->
 
 			<div class="container">
-
 				<div class="row">
 
-					<div class="col-md-3 col-xs-12 col-news">
+					<div id="noticias-home" class="col-xs-12">
+						<div class="row">							
 
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-						<img src="img/sample-pics/012.jpg" class="img-responsive">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu.</p>
 
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-					</div>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-					<div class="col-md-3 col-xs-12 col-news">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu pro, ut sea utamur dissentias.</p>
 
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-						<img src="img/sample-pics/013.jpg" class="img-responsive">
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu.</p>
 
-					</div>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-					<div class="col-md-3 col-xs-12 col-news">
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-						<img src="img/sample-pics/014.jpg" class="img-responsive">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu pro, ut sea utamur dissentias.</p>
 
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-					</div>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-					<div class="col-md-3 col-xs-12 col-news">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu.</p>
 
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-						<img src="img/sample-pics/015.jpg" class="img-responsive">
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu pro, ut sea utamur dissentias.</p>
 
-					</div>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-					<div class="col-md-3 col-xs-12 col-news">
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12 hidden-sm">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-						<img src="img/sample-pics/016.jpg" class="img-responsive">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu.</p>
 
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
 
-					</div>
+							<!-- Card de Noticias Home -->
+							<div id="card-noti" class="col-md-3 col-sm-4 col-xs-12 hidden-sm">
+								<div class="col-lg-12 col-md-12 hidden-xs">
+									<div class="row">
+										<a class="block" href="#">
+											<img src="img/1600.jpg" class="img-responsive" />
+										</a>
+									</div>									
+								</div>
 
-					<div class="col-md-3 col-xs-12 col-news">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 detalle">																
+									<h4>Titulo de la Noticia</h4>									
+									
+									<p class="hidden-xs">Lorem ipsum dolor sit amet, sed an postea invenire, tale voluptatum vel no. Platonem prodesset scripserit eu pro, ut sea utamur dissentias.</p>
 
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
+									<p class="t-mini">16 de Marzo de 2016</p>
 
-						<img src="img/sample-pics/017.jpg" class="img-responsive">
+									<a class="ver-mas" href="noticias_detalle.html">Ver Noticia</a>	
+								</div>
+							</div><!-- /Fin Card de Noticias Home -->
+													
 
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
-
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
-
-					</div>
-
-					<div class="col-md-3 col-xs-12 col-news">
-
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
-
-						<img src="img/sample-pics/018.jpg" class="img-responsive">
-
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
-
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
-
-					</div>
-
-					<div class="col-md-3 col-xs-12 col-news">
-
-						<h4>Orgullosos de nuestra area tecnica profesional</h4>
-
-						<img src="img/sample-pics/019.jpg" class="img-responsive">
-
-						<p>La cigüeña tocaba el saxofón detrás del palenque de paja. Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso.</p>
-
-						<a href="#" class="btn-ocho clearfix">
-							<span>20/04/2016</span>
-							<span>Ver más</span>
-						</a>
-
+						</div>
 					</div>
 
 					<div class="col-xs-12 centrar">
@@ -374,93 +401,56 @@
 
 		</div><!-- FIN CONTENIDO -->
 
-		<footer>
+		<!--FOOTER - NUEVO -->
+		<footer id="footer" class="clearfix">
 
-			<div class="centrar">
-				<img src="img/logo-footer.png">
-				<img src="img/logo.svg">
+			<div id="footer-pic">s
 			</div>
 
-			<div class="centrar">
-				<a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a>
-				<a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a>
-			</div>
+			<div class="container clearfix">
 
-			<div class="container">
 				<div class="row">
-					<div class="vinculos clearfix">
-						<div class="col-md-2">
-							<h5 class="mayus">Nuestro Colegio</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Proyecto Educativo</a></li>
-								<li><a href="#">Mision y Vision</a></li>
-								<li><a href="#">Noticias</a></li>
-							</ul>
-						</div>
 
-						<div class="col-md-2">
-							<h5 class="mayus">Admision 2016</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Requisitos</a></li>
-								<li><a href="#">Formulario de postulación</a></li>
-							</ul>
+					<div class="col-xs-12">
+						<div id="bottom-logo">
+							<a href="#">
+								<img src="img/logo-footer.png">
+								<h4>
+									COLEGIO<br><strong>DOMINGO SANTA MARÍA</strong>
+								</h4>	
+								<span>ARICA</span>														
+							</a>
 						</div>
+					</div>	
+				</div>
+			</div>
 
-						<div class="col-md-2">
-							<h5 class="mayus">Alumnos</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Noticias</a></li>
-								<li><a href="#">Horarios</a></li>
-								<li><a href="#">CRA</a></li>
-								<li><a href="#">Escuela de Lenguaje</a></li>
-								<li><a href="#">Básica</a></li>
-								<li><a href="#">Pre Básica</a></li>
-								<li><a href="#">Material de Estudio</a></li>								
-							</ul>
+			<div id="bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							Todos los Derechos Reservados · AV. Diego Portales ·2591, Arica
 						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
 
-						<div class="col-md-2">
-							<h5 class="mayus">Apoderados</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Efemerides</a></li>
-								<li><a href="#">Webmail</a></li>
-								<li><a href="#">Syscol</a></li>
-								<li><a href="#">Nptas Net</a></li>
-								<li><a href="#">Reuniones de curso</a></li>								
-							</ul>
+							<div class="row">
+
+								<ul class="nav navbar-nav navbar-right">
+									<li class="telefono"><a href="#">Teléfono: + 56 51-2211084</a></li>
+									<li><a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a></li>
+									<li><a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a></li>					
+								</ul>
+
+							</div>
 						</div>
-
-						<div class="col-md-2">
-							<h5 class="mayus">Academias</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Inscripcion</a></li>	
-							</ul>
-							<h5 class="mayus">Contacto</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Ubicación</a></li>
-								<li><a href="#">Telefono</a></li>
-								<li><a href="#">Webmail</a></li>	
-							</ul>
-						</div>
-
-						<div class="col-md-2">
-							<h5 class="mayus">Agenda</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Cronograma</a></li>	
-								<li><a href="#">Calendario de pruebas</a></li>	
-								<li><a href="#">Actividades</a></li>
-							</ul>
+						<div class="col-md-2 col-sm-12 col-xs-12">
+							<div class="webmail"><a href="">Webmail</a></div>
 						</div>
 
 					</div>
 				</div>
-			</div><!-- CONTAINER VINCULOS -->
-
-			<div class="img-shadow"></div>
-
-			<img class="img-absolute" src="img/sample-pics/006.jpg">
-
-		</footer>
+			</div>			
+		</footer><!--/FIN FOOTER - NUEVO --> 
 
 	</div><!-- FIN WRAPPER -->
 
