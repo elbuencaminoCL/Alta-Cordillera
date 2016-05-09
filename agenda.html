@@ -4,13 +4,12 @@
 	<title>Colegio</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href='https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	
-	<link href="css/cthiers.css" rel="stylesheet" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">	
 	<link href="css/header.css" rel="stylesheet" media="screen">
+	<link href="css/cthiers.css" rel="stylesheet" media="screen">
+	<link href="css/randy.css" rel="stylesheet" media="screen">
 
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -21,25 +20,37 @@
 	<!--[if IE]>
 	<script src="js/ie9.js"></script>
 	<![endif]-->
+	<script type="text/javascript">
+		$(window).scroll(function() {    
+		    var scroll = $(window).scrollTop();
+
+		    if (scroll >= 100) {
+		        $("#header").addClass("chevron");
+		    } else {
+		        $("#header").removeClass("chevron");
+		    }
+		});
+	</script>
 </head>
 
-<body class="home" id="home">
+<body class="home agenda-page" id="home">
 
 	<div class="wrapper">
 
-		<!-- HEADER -->
+		<!<!-- HEADER -->
+		<header id="header" class="header clearfix navbar-fixed-top">
 
-		<header id="header" class="header clearfix">
+			<div class="cajon">
 
-			<!-- MENU SUPERIOR -->
-
-			<nav id="top-menu" class="navbar navbar-default" role="navigation">
+				<!-- MENU SUPERIOR -->
+				<nav id="top-menu" class="navbar navbar-default" role="navigation">
 				<div class="container">
 					<div class="row">
 
 						<div class="collapse navbar-collapse colapsables">
-
-							<a class="telefono" href="#">Telefono +5612345678</a>
+							<ul class="nav navbar-nav navbar-left">
+								<li><a class="telefono" href="#">Teléfono: + 56 51-2211084</a></li>
+							</ul>
 
 							<ul class="nav navbar-nav navbar-right">
 								<li><a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a></li>
@@ -50,20 +61,25 @@
 
 					</div>
 				</div>
-			</nav>
+				</nav><!-- /FIN MENU SUPERIOR -->
 
-			<!-- MENU PRINCIPAL -->
-
-			<nav id="menu-principal" class="navbar navbar-default" role="navigation">
+				<!-- MENU PRINCIPAL -->
+				<nav id="menu-principal" class="navbar navbar-default" role="navigation">
 				<div class="container">
-					<!--<div class="row clearfix">-->
+					<div class="row clearfix">
 
 						<div class="nav-toggler-movil">
 
-							<div id="logotipo" class="navbar-header">
-								<a class="clearfix" href="index.html">
-									<img src="img/logo.png">									
+							<div id="mobile-logo">
+								<a class="clearfix" href="#">
+									<img src="img/logo.svg">
+									<h4>
+										COLEGIO<br>
+										ALTA CORDILLERA
+									</h4>													
 								</a>
+
+								<div class="triangulo"></div>
 							</div>
 
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".colapsables">
@@ -76,11 +92,11 @@
 						</div>					
 
 						<div class="collapse navbar-collapse colapsables">
-							
-						    <ul class="nav navbar-nav"><!-- ELEMENTOS MENU -->
+
+							<ul class="nav navbar-nav navbar-left"><!-- ELEMENTOS MENU -->
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro Colegio</a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestro Colegio<span class="caret"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Elemento</a></li>
 						                <li><a href="#">Elemento</a></li>
@@ -90,17 +106,7 @@
 						        </li>
 
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admisión 2016</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alumnos</a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alumnos<span class="caret"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Elemento</a></li>
 						                <li><a href="#">Elemento</a></li>
@@ -109,8 +115,18 @@
 						        	</ul>
 						        </li>	
 
+						        <li><a href="#">Admisión</a></li>
+
+						        <li><a href="#">Agenda</a></li>
+
+						    </ul><!-- FIN ELEMENTOS MENU -->
+							
+						    <ul class="nav navbar-nav navbar-right"><!-- ELEMENTOS MENU -->
+
+						        <li><a href="#">Actividades Extraprogramáticas</a></li>						        
+
 						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados</a>
+						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Apoderados<span class="caret"></span></a>
 						            <ul class="dropdown-menu">
 						                <li><a href="#">Elemento</a></li>
 						                <li><a href="#">Elemento</a></li>
@@ -119,110 +135,68 @@
 						        	</ul>
 						        </li>
 
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academias</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>						        						        					        
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agenda</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Webmail</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>
-
-						        <li class="dropdown">
-						            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto</a>
-						            <ul class="dropdown-menu">
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						                <li><a href="#">Elemento</a></li>
-						        	</ul>
-						        </li>						        
+						        <li><a href="#">Contacto</a></li>
 
 						    </ul><!-- FIN ELEMENTOS MENU -->
 
 						</div>
-				<!--</div> ROW -->
+					</div><!-- ROW -->
 				</div><!-- CONTAINER -->
-			</nav>
+				</nav><!-- FIN MENU PRINCIPAL -->
 
-			<!-- FIN MENU PRINCIPAL -->
+			</div>
 
-		</header>
+			<div id="extra-logo">
+				<a class="clearfix" href="#">	
+					<span>COLEGIO ALTA CORDILLERA</span>
+					<img src="img/logo.svg">														
+				</a>
+
+				<div class="triangulo"></div>
+			</div>
+		</header><!-- FIN HEADER -->
 
 		<!-- CONTENIDO -->
 
 		<div id="main" class="clearfix">
 
-			<div class="img-seccion">
-				<div class="img-shadow"></div>
-				<img class="img-absolute" src="img/sample-pics/002.jpg">
-			</div>
+			<<!--NUEVO CON ICONO-ENCABEZADO CON IMAGEN Y TÍTULO-->
+			<div class="seccion-encabezado">
+				<div id="foto-encabezado">
+					<img src="img/cabecera-randy.jpg">
+					<div id="filtro-encab"></div>
+				</div>
+				<h2 class="titulo-seccion center relative"><span><img src="img/iconos/noticias.svg"></span></h2>
+			</div><!--/FIN ENCABEZADO CON IMAGEN Y TÍTULO-->
 
-			<div class="titulo-seccion">
-				<div class="circulo">
-					<span>
-						<img src="img/iconos/agenda.svg">
-					</span>
-				</div>	
-				<h1>Calen<span>dario</span></h1>
-			</div>
+			<!-- Título de página -->
+			<div class="container center">
+				<h1 class="titulo-page upper">calendario</h1>
+			</div><!-- /Fin Título de página -->
 
 			<div class="container">
 				<h3 class="centrar">El gran Oxmox le desanconsejó hacerlo, ya que esas tierras estaban llenas de comas malvadas, signos de interrogación salvajes y puntos y coma traicioneros, pero el texto simulado no se dejó atemorizar.</h3>
 			</div>
 
-			<div class="titulo-uno">
+			
 
-				<div class="container">
+			<div class="container">
+				<form class="recuadro clearfix vertical-flex alert alert-dismissible" role="alert">
+					<button type="button" class="close cerrar" data-dismiss="alert" aria-label="Close">X</button>
 
-					<form class="recuadro clearfix vertical-flex alert alert-dismissible" role="alert">
+					<div class="col-md-5 col-xs-12">
+						<p>Suscribite y recibe todas las novedades en tu Mail</p>
+					</div>
 
-						<button type="button" class="close cerrar" data-dismiss="alert" aria-label="Close">X</button>
+					<div class="col-md-4 col-xs-12">
+						<input type="mail" placeholder="Escribe aquí tu mail">
+					</div>
 
-						<div class="col-md-5 col-xs-12">
-
-							<p>Suscribite y recibe todas las novedades en tu Mail</p>
-
-						</div>
-
-						<div class="col-md-4 col-xs-12">
-
-							<input type="mail" placeholder="Escribe aquí tu mail">
-
-						</div>
-
-						<div class="col-md-3 col-xs-12">
-
-							<button type="submit" class="btn btn-uno">Suscribirse</button>
-
-						</div>						
-
-					</form>
-
-				</div>	
-
-			</div>
+					<div class="col-md-3 col-xs-12">
+						<button type="submit" class="btn btn-uno">Suscribirse</button>
+					</div>	
+				</form>
+			</div>	
 
 			<div class="agenda-bt">			
 
@@ -230,7 +204,7 @@
 
 					<div class="col-md-6 col-xs-12">
 
-						<div class="calendario">
+						<div class="calendario shadow">
 
 							<div id="mes-actual">
 
@@ -326,12 +300,11 @@
 							</div>
 
 						</div>
-
 					</div>
 
 					<div class="row">
 
-						<div class="col-md-6 col-xs-12 block-rojo">						
+						<div class="col-md-6 col-xs-12 block-rojo shadow">						
 
 							<h4>Próximos eventos</h4>
 
@@ -477,7 +450,6 @@
 							<div class="centrar">
 								<a href="" class="btn-seis btn-inline">Descargar Agenda Completa</a>
 							</div>
-
 						</div>
 
 					</div>
@@ -488,93 +460,56 @@
 
 		</div><!-- FIN CONTENIDO -->
 
-		<footer>
+		<!--FOOTER - NUEVO -->
+		<footer id="footer" class="clearfix">
 
-			<div class="centrar">
-				<img src="img/logo-footer.png">
-				<img src="img/logo.svg">
+			<div id="footer-pic">s
 			</div>
 
-			<div class="centrar">
-				<a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a>
-				<a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a>
-			</div>
+			<div class="container clearfix">
 
-			<div class="container">
 				<div class="row">
-					<div class="vinculos clearfix">
-						<div class="col-md-2">
-							<h5 class="mayus">Nuestro Colegio</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Proyecto Educativo</a></li>
-								<li><a href="#">Mision y Vision</a></li>
-								<li><a href="#">Noticias</a></li>
-							</ul>
-						</div>
 
-						<div class="col-md-2">
-							<h5 class="mayus">Admision 2016</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Requisitos</a></li>
-								<li><a href="#">Formulario de postulación</a></li>
-							</ul>
+					<div class="col-xs-12">
+						<div id="bottom-logo">
+							<a href="#">
+								<img src="img/logo-footer.png">
+								<h4>
+									COLEGIO<br><strong>DOMINGO SANTA MARÍA</strong>
+								</h4>	
+								<span>ARICA</span>														
+							</a>
 						</div>
+					</div>	
+				</div>
+			</div>
 
-						<div class="col-md-2">
-							<h5 class="mayus">Alumnos</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Noticias</a></li>
-								<li><a href="#">Horarios</a></li>
-								<li><a href="#">CRA</a></li>
-								<li><a href="#">Escuela de Lenguaje</a></li>
-								<li><a href="#">Básica</a></li>
-								<li><a href="#">Pre Básica</a></li>
-								<li><a href="#">Material de Estudio</a></li>								
-							</ul>
+			<div id="bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							Todos los Derechos Reservados · AV. Diego Portales ·2591, Arica
 						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
 
-						<div class="col-md-2">
-							<h5 class="mayus">Apoderados</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Efemerides</a></li>
-								<li><a href="#">Webmail</a></li>
-								<li><a href="#">Syscol</a></li>
-								<li><a href="#">Nptas Net</a></li>
-								<li><a href="#">Reuniones de curso</a></li>								
-							</ul>
+							<div class="row">
+
+								<ul class="nav navbar-nav navbar-right">
+									<li class="telefono"><a href="#">Teléfono: + 56 51-2211084</a></li>
+									<li><a class="fb" href="#"><img src="img/iconos/ico-fb.svg"></a></li>
+									<li><a class="tt" href="#"><img src="img/iconos/ico-tt.svg"></a></li>					
+								</ul>
+
+							</div>
 						</div>
-
-						<div class="col-md-2">
-							<h5 class="mayus">Academias</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Inscripcion</a></li>	
-							</ul>
-							<h5 class="mayus">Contacto</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Ubicación</a></li>
-								<li><a href="#">Telefono</a></li>
-								<li><a href="#">Webmail</a></li>	
-							</ul>
-						</div>
-
-						<div class="col-md-2">
-							<h5 class="mayus">Agenda</h5>
-							<ul class="hidden-sm hidden-xs">
-								<li><a href="#">Cronograma</a></li>	
-								<li><a href="#">Calendario de pruebas</a></li>	
-								<li><a href="#">Actividades</a></li>
-							</ul>
+						<div class="col-md-2 col-sm-12 col-xs-12">
+							<div class="webmail"><a href="">Webmail</a></div>
 						</div>
 
 					</div>
 				</div>
-			</div><!-- CONTAINER VINCULOS -->
-
-			<div class="img-shadow"></div>
-
-			<img class="img-absolute" src="img/sample-pics/006.jpg">
-
-		</footer>
+			</div>			
+		</footer><!--/FIN FOOTER - NUEVO -->
 
 	</div><!-- FIN WRAPPER -->
 

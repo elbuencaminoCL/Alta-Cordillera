@@ -34,9 +34,7 @@ a {
   color: #249;
   transition: all 0.3s;
 }
-a:hover{
-  color: #08E;
-}
+
 a:hover, 
 a:focus, 
 a:active,
@@ -151,6 +149,7 @@ ul{
   margin: 15px 0px 0px 0px;
   padding: 15px 15px 15px 15px;
   background: #1D6585;
+  text-align: center;
   color: #FFF;
 }
 .block-rojo p{
@@ -166,7 +165,7 @@ ul{
     width: auto!important;
   }
   .bt-margin{
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
 
 }
@@ -193,21 +192,21 @@ ul{
 }
 .btn-dos{
   color: #FFF;
-  background: #FB0;
+  background: #257FA7;
   border: 0px;
   border-radius: 100px;
   font-size: 16px;
   padding: 10px 30px;
   margin: 0px 0px;
   text-align: center;
-  border: 2px solid #FB0;
+  border: 2px solid #257FA7;
 }
 .btn-dos:hover{
   background: #FFF;
-  color: #FB0;
+  color: #257FA7;
 }
 .btn-tres{
-  color: # 1D6585;
+  color: #1D6585;
   background: transparent;
   border: 2px solid #1D6585;
   border-radius: 100px;
@@ -271,6 +270,11 @@ ul{
   padding: 6px 20px;
   margin: 0px 0px;
   text-align: center;
+}
+.btn-siete:hover{
+  background-color: #257FA7;
+  color: #fff;
+
 }
 .btn-ocho{
   background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(34,119,170,1) 50%,rgba(34,119,170,1) 100%); 
@@ -561,6 +565,7 @@ h6{}
   background: #EEE;
   padding: 15px 0px;
   margin: 0px 0px 15px 0px;
+  border-radius: 15px;
 }
 .titulo-cuatro div h2{
   margin: 0px 0px 15px 0px;
@@ -665,6 +670,7 @@ h6{}
   .recuadro p {
     margin: 0px;
   }
+
 }
 
 /* RECUADRO MOVIL*/
@@ -707,7 +713,8 @@ form .btn-dos{
 }
 form label{
   text-transform: uppercase;
-  color: # 1D6585;
+  color: #1D6585;
+  font-weight: 400;
   margin: 0px 0px 10px 0px;
 }
 form input.form-control{
@@ -889,7 +896,7 @@ form select.form-control{
   padding: 30px;
   width: 100%;
   color: #FFF;
-  background: rgba(153, 85, 85,0.7);
+  background: rgba(4,44,48,0.7);
   height: 130px;
   transition: all 0.2s;
 }
@@ -935,6 +942,7 @@ form select.form-control{
   text-align: left;
   text-transform: none;
   font-weight: 400;
+  font-size: 15px;
 }
 .col-gals .overlay h4 img{
   display: inline;
@@ -1163,7 +1171,7 @@ form select.form-control{
 
 .evento{
   color: #FFF;
-  background: #844;
+  background: rgba(0,0,0,0.2);
   border-radius: 100px;
   margin: 0px auto 15px auto;
   width: 85%;
@@ -1177,7 +1185,7 @@ form select.form-control{
 }
 .fecha{
   color: #FFF;
-  background: #633;
+  background: #257FA7;
   height: 120px;
   width: 120px;
   display: flex;
@@ -1203,6 +1211,7 @@ form select.form-control{
 }
 .event-desc{
   padding: 15px;
+  text-align: left;
 }
 .event-desc h4{
   text-transform: none;
@@ -1216,7 +1225,6 @@ form select.form-control{
   color: #FFF;
 }
 .agenda-bt{
-  background: linear-gradient(to right,  rgba(170,102,102,1) 0%,rgba(170,102,102,1) 50%,rgba(153,85,85,1) 50%,rgba(153,85,85,1) 100%);
 }
 .agenda-bt .col-md-6{
   padding: 0px 40px 0px 15px;
@@ -1226,7 +1234,7 @@ form select.form-control{
 }
 .agenda-bt .block-rojo > h4{
   padding: 15px 40px;
-  border-bottom: 2px solid #A66;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
   color: #FFF;
   text-transform: uppercase;
   margin: 0px 0px 30px 0px;
@@ -1234,11 +1242,11 @@ form select.form-control{
 .agenda-bt .centrar + .centrar{
   margin: 30px auto 0px auto;
   padding: 30px;
-  border-top: 2px solid #A66;
+  border-top: 2px solid rgba(0,0,0,0.2);
 }
 .event-block{
   padding: 15px;
-  border-top: 2px solid #A66;
+  border-top: 2px solid rgba(0,0,0,0.2);
   background: #1D6585;
 }
 .event-block h2{
@@ -1260,9 +1268,11 @@ form select.form-control{
   color: #FFF;
   margin: 0px 0px 0px 30px;  
 }
-.calendario{
-  width: 85%;
-  margin: 15px auto;
+.calendario {
+    width: 85%;
+    margin: 15px auto;
+    overflow: hidden;
+    border-radius: 15px;
 }
 .calendario > img{
   width: 100%;
@@ -1276,13 +1286,11 @@ form select.form-control{
 }
 .agenda-bt .block-rojo{
   padding: 0px 0px;
+  border-radius: 15px;
 }
 
 @media only screen and (max-width: 992px){
 
-  .agenda-bt{
-    background: #A66;
-  }
   .agenda-bt .col-md-6{
     padding: 0px 0px;
   }
@@ -1830,8 +1838,8 @@ a.btn[aria-expanded="true"] img{
 }
 #mes-actual h2{
   padding: 15px;
-  background: #633;
-  color: #FFF;
+  background: transparent;
+  color: #1D6585;
   font-size: 20px;
   text-align: center;
   margin: 0px 0px;
@@ -1842,7 +1850,7 @@ a.btn[aria-expanded="true"] img{
   height: 0px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid #FFF;
+  border-right: 10px solid #1D6585;
 }
 #mes-actual h2 span:nth-of-type(2){
   float: right;
@@ -1850,7 +1858,7 @@ a.btn[aria-expanded="true"] img{
   height: 0px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 10px solid #FFF;
+  border-left: 10px solid #1D6585;
 }
 #mes-actual h2 + div{
   background: #1D6585;
@@ -1858,14 +1866,14 @@ a.btn[aria-expanded="true"] img{
 }
 #mes-actual h3{
   font-size: 140px;
-  color: #A66;
+  color: #257FA7;
   text-align: center;
   padding: 30px auto 10px auto;
   margin: 0px;
 }
 #mes-actual h4{
   font-size: 30px;
-  color: #A66;
+  color: #257FA7;
   text-align: center;
   padding: 0px 0px;
   margin: 0px 0px;
